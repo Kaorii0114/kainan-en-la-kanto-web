@@ -1,0 +1,726 @@
+@font-face {
+    font-family: TheSeasons;
+    src: url(the-seasons-regular.ttf);
+  }
+  @font-face {
+    font-family: GillSans;
+    src: url(Gill-Sans.otf);
+  }
+ *{
+    margin: 0;
+    padding: 0;
+ }
+.container{
+    background-color: #f0f1ed;
+    width: 100%;
+    height: 100vh;
+}
+.wavy_bg{
+    position: absolute;
+    right: 0px;
+    height: 135vh;
+}
+header{
+    width: 100%;
+    position: fixed ; 
+    left: 0;
+    top: 0;
+    display: block;
+    justify-content: space-around;
+    text-align: right;
+    padding-top: 90px;
+    align-items: center;
+    font-family: TheSeasons;
+    transition: 0.6s;
+    transition: ease-in;
+    z-index: 1000;
+}
+header img{
+    height: 210px;
+    width: 210px;
+    top: 25px;
+    left: 50px;
+    position: absolute;
+    transition: 0.6s;
+   
+}
+header.sticky{ 
+    justify-content: space-evenly;
+    text-align: right;
+    display: inline-block;
+    align-items: center;
+    padding: 30px;
+    background: #e0e0e0;
+}
+header.sticky img{
+    top: -60px;
+    transform: scale(0.4);
+}
+header a{
+    font-size: 25px;
+    font-weight: 525;
+    margin: 0 20px;
+    color: black;   
+    text-decoration: none;
+    margin-right: 100px;
+    letter-spacing: 1px;
+    transition: 0.6s;
+}
+header.sticky a{
+    font-size: 22px;
+    color: #a44018;
+    font-weight: 500;
+}
+header.sticky a span{
+    font-size: 22px;
+    color: #a44018;
+}
+header a:nth-child(2):before{
+    padding: 0;
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    width: 4.3%;
+    height: 4px;
+    background: #a44018;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+header.sticky a:nth-child(2):before{
+    bottom: 27px;
+    width: 3.6%;
+}
+header a:nth-child(3)::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    width: 13%;
+    height: 4px;
+    background: #a44018;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+header.sticky a:nth-child(3):before{
+    bottom: 27px;
+    width: 11.2%;
+}
+header a:nth-child(4)::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    width: 6.6%;
+    height: 4px;
+    background: #f0f1ed;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+    z-index: 3;
+}
+header.sticky a:nth-child(4):before{
+    background: #a44018;
+    bottom: 27px;
+    width: 6%;
+}
+header a:nth-child(5)::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    width: 8.4%;
+    height: 4px;
+    background: #f0f1ed;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+    z-index: 3;
+}
+header.sticky a:nth-child(5):before{
+    background: #a44018;
+    bottom: 27px;
+    width: 7.4%;
+}
+header a:hover::before{
+    transform: scaleX(1);
+}
+
+header a span{
+    color: #f0f1ed;
+}
+
+.fusion_food{
+    width: 850;
+    height: 805;
+    position: absolute;
+    right: 110px;
+    top: 205px;
+}
+.Landing_page{
+    width: 40%;
+    height: 40vh;
+    position: relative;
+    top: 330px;
+    left: 90px;
+}
+.Landing_page h1{
+    z-index: 2;
+    font-size: 65px;
+    font-family: TheSeasons;
+}
+.Landing_page h2{
+    z-index: 2;
+    font-size: 36px;
+    font-weight: 100;
+    margin-top: 19px;
+    font-family: TheSeasons;
+}
+.Landing_page h3 {
+    width: 600px;
+    height: 100px;
+    margin-top: 40px;
+    font-size: 30px;
+    font-family: TheSeasons;
+    letter-spacing: 1px;
+    line-height: 40px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 100;
+}
+.Landing_page h3 span{
+    font-family: Arial;
+}
+.Landing_page h3 font{
+    font-weight: bold;
+}
+.menu_btn{
+    
+    font-family: TheSeasons;
+    font-size: 30px;
+    padding: 25px;
+    border-radius: 35px;
+    font-weight: bold;
+    background-color: #a44018;
+    border: #a44018;
+    margin-top: 70px;
+    margin-left: 170px;
+    box-shadow: 3px 3px 10px black;
+    transition: 0.3s ease all;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+.menu_btn a{
+    color: #f0f1ed;
+    text-decoration: none;
+}
+.menu_btn:active{
+    transform: scale(0.9);
+}
+.specialties{
+    width: 100%;
+    height: 85vh;
+    background-color: #f0f1ed;
+    font-family: TheSeasons;
+
+}
+.divider_img{
+    margin-top: 150px;
+    position: absolute;
+    width: 100%;
+}
+.specialties h1{
+    font-size: 83px;
+    margin-top: 270px;
+    z-index: 10;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: #f0f1ed;
+}
+.specialties h2{
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    bottom: -550px;
+    font-size: 33px;
+    color: #6e6c2f;
+    font-weight: 100;
+    font-family: Open Sans, sans serif;
+}
+.specialties h3{
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    bottom: -575px;
+    font-size: 53px;
+    color: #a44018;
+    font-weight: 100;
+}
+.food_specialties{
+    width: 100%;
+    height: 230vh;
+    background-color:#f0f1ed;
+    align-items: center;
+    justify-content: center;
+    display: flex;                
+    flex-direction: column;  
+    gap: 20px;
+    margin-top: -33vh;
+}
+.food_specialties_1{    
+    display: inline-flex;
+    align-items: center;
+    width: 93%;
+    margin: 20px auto; 
+    height: 55vh;
+    font-family: TheSeasons;
+    background: #f0f1ed;
+}
+.food_specialties_1 img{
+    margin-right: 40px;
+    margin-left: 80px;
+    border-radius: 35px;
+}
+.food_specialties_1 .fs-holder1{
+    flex: 1;
+    height: 53vh;
+}
+.food_specialties_1 .fs-holder1 h2{
+    color: #6e6c2f;
+    margin-left: 20px;
+    font-size: 25px;
+}
+.food_specialties_1 .fs-holder1 h1{
+    position: relative;
+    color: #a44018;
+    font-size: 40px;
+    padding-top: 10px;
+    font-size: 48px;
+}
+.food_specialties_1 .fs-holder1 p{
+    width: 90%;
+    letter-spacing: 1.5px;
+    font-size: 25px;
+    font-weight: 525;
+    line-height: 1.3;
+    margin-top: 45px;
+}
+
+.food_specialties_1 div button{
+    border: solid #6e6c2f 3px;
+    padding: 20px;
+    position: relative;
+    font-family: TheSeasons;
+    margin-top: 75px;
+    font-size: 20px;
+    background: transparent;
+    transition: color 0.4s linear;
+    z-index: 1;
+    cursor: pointer;
+}
+.food_specialties_1 div button:hover {
+    color: #f0f1ed;
+}
+.food_specialties_1 div button::before {
+    color: #f0f1ed;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #6e6c2f;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+}
+.food_specialties_1 div button::before {
+    transform: scaleX(0);
+}
+.food_specialties_1 div button:hover::before {
+    transform: scaleX(1);
+}
+.food_specialties_2{    
+    display: inline-flex;
+    align-items: center;
+    width: 93%;
+    margin: 20px auto; 
+    height: 55vh;
+    font-family: TheSeasons;
+    background: #f0f1ed;
+}
+.food_specialties_2 img{
+    margin-left: 40px;
+    margin-right: 80px;
+    border-radius: 35px;
+}
+.food_specialties_2 .fs-holder2{
+    flex: 1;
+    height: 53vh;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-end; 
+}
+.food_specialties_2 .fs-holder2 h2{
+    color: #6e6c2f;
+    font-size: 25px;
+    margin-right: 10px;
+}
+.food_specialties_2 .fs-holder2 h1{
+    position: relative;
+    color: #a44018;
+    font-size: 40px;
+    padding-top: 10px;
+    font-size: 48px;
+}
+.food_specialties_2 .fs-holder2 p{
+    width: 90%;
+    letter-spacing: 1.5px;
+    font-size: 25px;
+    font-weight: 525;
+    line-height: 1.3;
+    margin-top: 45px;
+    text-align: right;
+}
+.food_specialties_2 div button{
+    border: solid #6e6c2f 3px;
+    padding: 20px;
+    position: relative;
+    font-family: TheSeasons;
+    margin-top: 65px;
+    font-size: 20px;
+    background: transparent;
+    transition: color 0.4s linear;
+    z-index: 1;
+    cursor: pointer;
+}
+.food_specialties_2 div button:hover {
+    color: #f0f1ed;
+}
+.food_specialties_2 div button::before {
+    color: #f0f1ed;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #6e6c2f;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+}
+.food_specialties_2 div button::before {
+    transform: scaleX(0);
+}
+.food_specialties_2 div button:hover::before {
+    transform: scaleX(1);
+}
+.food_specialties_3{    
+    display: inline-flex;
+    align-items: center;
+    width: 93%;
+    margin: 20px auto; 
+    height: 55vh;
+    font-family: TheSeasons;
+    background: #f0f1ed;
+}
+.food_specialties_3 img{
+    margin-right: 40px;
+    margin-left: 80px;
+    border-radius: 35px;
+}
+.food_specialties_3 .fs-holder3{
+    flex: 1;
+    height: 53vh;
+}
+.food_specialties_3 .fs-holder3 h2{
+    color: #6e6c2f;
+    margin-left: 20px;
+    font-size: 25px;
+}
+.food_specialties_3 .fs-holder3 h1{
+    position: relative;
+    color: #a44018;
+    font-size: 40px;
+    padding-top: 10px;
+    font-size: 48px;
+}
+.food_specialties_3 .fs-holder3 p{
+    width: 90%;
+    letter-spacing: 1.5px;
+    font-size: 25px;
+    font-weight: 525;
+    line-height: 1.3;
+    margin-top: 45px;
+}
+
+.food_specialties_3 div button{
+    border: solid #6e6c2f 3px;
+    padding: 20px;
+    position: relative;
+    margin-top: 65px;
+    font-family: TheSeasons;
+    font-size: 20px;
+    background: transparent;
+    transition: color 0.4s linear;
+    z-index: 1;
+    cursor: pointer;
+}
+.food_specialties_3 div button a {
+    text-decoration: none;
+    color: black;
+}
+.food_specialties_3 div button:hover {
+    color: #f0f1ed;
+}
+
+.food_specialties_3 div button::before {
+    color: #f0f1ed;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #6e6c2f;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+}
+.food_specialties_3 div button::before{
+    color: #f0f1ed;
+}
+.food_specialties_3 div button::before {
+    transform: scaleX(0);
+}
+.food_specialties_3 div button:hover::before {
+    transform: scaleX(1);
+}
+.owl-carousel-holder{
+    margin-top: -150px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f0f1ed;
+}
+.item{
+    text-align: center;
+    color: #f0f1ed;
+    cursor: grab;
+    background: #f0f1ed;
+}
+.reservation-holder{
+    width: 100%;
+    height: 67vh;
+    background: #f0f1ed;
+}
+.reservation-header h2{
+    position: relative;
+    padding-top: 70px;
+    font-family: TheSeasons;
+    font-size: 35px;
+    font-weight: 100;
+    color: #6e6c2f;
+    text-align: center;
+}
+.reservation-header h1{
+    padding: 10px;
+    position: relative;
+    font-family: TheSeasons;
+    font-size: 69px;
+    font-weight: 525;
+    text-align: center;
+    color: #a44018;
+}
+.reservation-header .reservation-middle{
+    margin-top: 10px;
+    font-size: 37px;
+    font-family: TheSeasons;
+    width: 1000px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.reservation-header .reservation-middle span{
+    font-family: Arial;
+}
+.reservation-holder .reservation-form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+}
+.reservation-holder .reservation-form form select{
+    width: 399.9px;
+    height: 61px;
+    text-align: left;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-left: 10px;
+    color: #909090;
+    margin-right: 10px;
+    padding-left: 20px;
+    border: 2px solid #a9a9a9;
+}
+.reservation-holder .reservation-form form #date{
+    width: 399.9px;
+    height: 57px;
+    text-indent: 1px;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding-left: 20px;
+    color: #909090;
+    border: 2px solid #a9a9a9;
+}
+.submit-btn-reservation-holder{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.submit-btn-reservation-holder .submit-btn-reservation{
+    position: relative;
+    width: 170px;
+    height: 54px;
+    border: 2px solid #a9a9a9;
+    background: transparent;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    color: #a9a9a9;
+    z-index: 1;
+    transition: color 0.5s linear;
+}
+.submit-btn-reservation-holder .submit-btn-reservation:hover{
+    color: #f0f1ed;
+}
+.submit-btn-reservation-holder .submit-btn-reservation::before{
+    color: #f0f1ed;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #333333;
+    z-index: -1;
+    transition: transform 0.5s;
+    border: 2px solid #333333;
+    transform-origin: 0 0;
+}
+.submit-btn-reservation-holder .submit-btn-reservation::before{
+    transform: scaleX(0);
+}
+.submit-btn-reservation-holder .submit-btn-reservation:hover::before{
+    transform: scaleX(1);
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background: #333333;
+    height: 53vh;
+}
+.footer-logo{
+    display: inline-block;
+}
+.footer-container img{
+    margin: 0 100px 0 100px;
+    display: block;
+    height: 300px;
+    width: auto
+    
+}
+.footer-container .instagram-page{
+    position: relative;
+    height: 400px;
+    width: 500px;
+    margin-top: -10px;
+    margin-right: 35px;
+}
+.footer-container .instagram-page h1{
+    color: #f0f1ed;
+    font-family: GillSans;
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 1.6px;
+    margin-top: 50px;
+}
+
+.footer-container .contact{
+    position: relative;
+    font-family: GillSans;
+    height: 400px;
+    width: 500px;
+    margin-top: -10px;
+}
+.footer-container .contact h1{
+    color: #f0f1ed;
+    font-family: GillSans;
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 1.6px;
+    margin-top: 50px;
+}
+.footer-container .contact p{
+    margin-top: 40px;
+    width: 450px;
+    font-family: GillSans;
+    font-size: 26.9px;
+    letter-spacing: 1.7px;
+    text-align: center;
+    color:  #f0f1ed;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer-container .contact .icons{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+.footer-container .contact .icons img{
+    width: 35px;
+    height: auto;
+    margin: 20px;
+    cursor: pointer;
+}
+.footer-container .instagram-page .ig-pics-redirect{
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+ }
+ .footer-container .instagram-page .ig-pics-redirect img{
+    width: 150px;
+    height: auto;
+    margin: 10px
+ }
+ .footer-container .instagram-page p{
+    font-family: GillSans;
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    color: #f0f1ed;
+    margin-top: 23px;
+}
+.footer-container .instagram-page p a{
+    font-family: GillSans;
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    color: #f0f1ed;
+}

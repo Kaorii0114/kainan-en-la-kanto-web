@@ -2,16 +2,20 @@
 <html>
     <head>
         <title> KAINAN EN LA KANTO </title>
-        <link rel="stylesheet" href="css/homepage.css">
+        <link rel="stylesheet" href="css-fonts/homepage.css">
+        <link rel="stylesheet" href="css-fonts/owl-carousel-min.css">
+        <link rel="stylesheet" href="css-fonts/owl-default-theme-min.css">
         <link rel="icon" href="img/KAINAN_LOGO.png" type="image/icon type">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
     </head>
     <body>
         <header>
             <img src="img/KAINAN_LOGO_NOBG.png">
                 <a href="">HOME</a>
-                <a href="">OUR MERCHANDISE</a>
-                <a href=""><span>ABOUT US</span></a>
-                <a href=""><span>CONTACT US</span></a>
+                <a href="merchandise.html">OUR MERCHANDISE</a>
+                <a href="about.html"><span>ABOUT US</span></a>
+                <a href="contact.html"><span>CONTACT US</span></a>
         </header>
         <div class="container">
             
@@ -20,17 +24,13 @@
            
                 <img src="img/fusion_food.png" class="fusion_food">
                 <div class="Landing_page">
-                    <h1> 
-                        <font color="#6e6c2f">TACO, </font>
-                        <font color="#c03b2a">ADOBO, </font>
+                    <h1>   
+                        <font color="#6e6c2f">TACO,</font>
+                        <font color="#c03b2a">ADOBO,</font>
                         REPEAT
                     </h1>
-                    <hr  style="height:4px; margin-top: -2px;"
-                     width="195px " color="#6e6c2f" >
-                    <hr style="height:4px; margin-top: -6px; margin-left: 190px;"
-                    width="260px " color="#c03b2a" >
-                    <hr style="height:4px; margin-top: -6px; margin-left: 450px;"
-                    width="235px " color="black" >
+                    <hr style="height: 5px; background: linear-gradient(to right, #6e6c2f 28%, #c03b2a 28%, #c03b2a 66%, black 66%, black 100%  );
+                    width: 696px; ">
 
                     <h2> 
                         <font color="#6e6c2f">Bite Into the </font>
@@ -42,7 +42,7 @@
                         <br> foods here at <font color="#6e6c2f">KAINAN EN </font> <font color="#c03b2a">LA KANTO</font>
                     </h3>
 
-                    <button class="menu_btn"> VIEW OUR MENU </button>
+                    <button class="menu_btn" onclick="redirectToMenu()"> <a href="menu.html">VIEW OUR MENU </a></button>
                 </div>
         </div>
         <div class="specialties">
@@ -55,39 +55,184 @@
         <div class="food_specialties">
             <div class="food_specialties_1">
                 <img src="img/chicken_adobo.png">
-                <h2> The Art of Delicious </h2>
-                <h1> Chicken Adobo </h1>
-                <div>
+                <div class="fs-holder1">
+                    <h2> The Art of Delicious </h2>
+                    <h1> Chicken Adobo </h1>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button class="food_btn1"><span></span> VIEW OUR MENU </button>
+                    <button class="food_btn1" onclick="redirectToMenu()"><span></span> VIEW OUR MENU </button>
+                </div>
+            </div>
+
+            <div class="food_specialties_2">
+                <div class="fs-holder2">
+                    <h2> The Art of Delicious </h2>
+                    <h1> Birria Tacos </h1>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <button class="food_btn1" onclick="redirectToMenu()"><span></span> VIEW OUR MENU </button>
+                </div>
+                <img src="img/birria_tacos.png">
+            </div>
+
+            <div class="food_specialties_3">
+                <img src="img/beef_burritos.png">
+                <div class="fs-holder3">
+                    <h2> The Art of Delicious </h2>
+                    <h1> Beef Burrito </h1>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <button class="food_btn1" onclick="redirectToMenu()"> VIEW OUR MENU </button>
                 </div>
                 
             </div>
-            <div class="food_specialties_2">
-                <img src="img/birria_tacos.png">
-                <h2> The Art of Delicious </h2>
-                <h1> Birria Tacos </h1>
-                <div>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button class="food_btn1"><span></span> VIEW OUR MENU </button>
-                </div>
-            </div>
-            <div class="food_specialties_3">
-                <img src="img/beef_burritos.png">
-                <h2> The Art of Delicious </h2>
-                <h1> Beef Burrito </h1>
-                <div>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button class="food_btn1"> VIEW OUR MENU </button>
-                </div>
+            
+        </div>
+        <div class="owl-carousel-holder">
+            <div class="owl-carousel">
+                <div class="item"><img src="img/owl-sisig.png" ></div>
+                <div class="item"><img src="img/owl-enchiladas.png"></div>
+                <div class="item"><img src="img/owl-bangus.png"></div>
+                <div class="item"><img src="img/owl-quesedilla.png"></div>
+                <div class="item"><img src="img/owl-lckawali.png"></div>
+                <div class="item"><img src="img/owl-taco.png"></div>
             </div>
         </div>
+        <div class="reservation-holder">
+           <div class="reservation-header">
+                <h2> The Art of Delicious </h2>
+                <h1> Book A Table</h1>
+                <div class="reservation-middle">
+                    <p>Escape the ordinary, dive into extraordinary flavors – dine with us <span> ! </span> </p>
+                </div>
+                <div class="reservation-form">
+                    <form>
+                            <select name="group-party-number" id="group-party-number">
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7">7 People</option>
+                                <option value="8">8 People</option>
+                                <option value="9">9 People</option>
+                                <option value="10">10 People</option>
+                              </select>
+                       
+                        
+                            <input type="text" name="date" id="date" value="9/11/01">
+                        
+                            <select name="Time" id="1">
+                                <option value="5:30pm">6:30 am</option>
+                                <option value="5:30pm">7:00 am</option>
+                                <option value="5:30pm">7:30 am</option>
+                                <option value="5:30pm">8:00 am</option>
+                                <option value="5:30pm">8:30 am</option>
+                                <option value="5:30pm">9:00 am</option>
+                                <option value="5:30pm">9:30 am</option>
+                                <option value="5:30pm">10:00 am</option>
+                                <option value="5:30pm">10:30 am</option>
+                                <option value="5:30pm">11:00 am</option>
+                                <option value="5:30pm">11:30 am</option>
+                                <option value="5:30pm">12:00 pm</option>
+                                <option value="5:30pm">12:30 pm</option>
+                                <option value="5:30pm">1:00 pm</option>
+                                <option value="5:30pm">1:30 pm</option>
+                                <option value="5:30pm">2:00 pm</option>
+                                <option value="5:30pm">2:30 pm</option>
+                                <option value="5:30pm">3:00 pm</option>
+                                <option value="5:30pm">3:30 pm</option>
+                                <option value="5:30pm">4:00 pm</option>
+                                <option value="5:30pm">4:30 pm</option>
+                                <option value="5:30pm">5:00 pm</option>
+                                <option value="5:30pm">5:30 pm</option>
+                                <option value="6:00pm">6:00 pm</option>
+                                <option value="6:30pm">6:30 pm</option>
+                                <option value="7:00pm">7:00 pm</option>
+                                <option value="7:30pm">7:30 pm</option>
+                                <option value="8:00pm">8:00 pm</option>
+                                <option value="8:30pm">8:30 pm</option>
+                                <option value="9:00pm">9:00 pm</option>
+                                <option value="9:30pm">9:30 pm</option>
+                                <option value="10:00pm">10:00 pm</option>
+                                <option value="10:30pm">10:30 pm</option>
+                                <option value="11:00pm">11:00 pm</option>
+                                <option value="11:30pm">11:30 pm</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    </button>
+                </div>
+                <div class="submit-btn-reservation-holder">
+                    <button type="submit" class="submit-btn-reservation">
+                        <span> BOOK A TABLE </span>
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="instagram-page">
+                    <h1> FOLLOW US</h1>
+                    <div class="ig-pics-redirect"> 
+                        <img src="img/beef-lumpia.png">
+                        <img src="img/beef-chimichichangas.png">
+                        <img src="img/pork-sinigang.png">
+                    </div>
+                    <P> For all the latest news and updates, follow us on Instagram: <a href="https://www.instagram.com/"> @kainan_en_la_kanto </a></P>
+                </div>
+                
+                    <img src="img/kainan-black-bg.png">
         
+                <div class="contact">
+                    <h1> CONTACT</h1>
+
+                    <p> Corner Street Side along Hambriento Ave. & Avaro Drive by Sangrado Vaginal, 911420, E.X., Philippines</p>
+                <div class="icons">
+                    <img src="img/facebook-icon.png" onclick="redirectToFacebook()"> 
+                    <img src="img/discord-icon.png" onclick="redirectToDiscord()">
+                    <img src="img/instagram-icon.png" onclick="redirectToDiscord()">
+                    <img src="img/twitter-icon.png" onclick="redirectToDiscord()">
+                </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/owl.carousel.js"></script>
         <script type="text/javascript">
             window.addEventListener("scroll", function(){
                 var navbar = document.querySelector("header");
                 navbar.classList.toggle("sticky", window.scrollY > 0);
             })
+
+            function redirectToMenu(){  
+                window.location.href = "menu.html";
+            }
+            function redirectToFacebook(){
+                window.location.assign("https://www.facebook.com/people/Kainan-En-La-Kanto/61568619036341/");
+            }
+            function redirectToDiscord(){
+                window.location.assign("https://www.facebook.com/khirstenadrian.flora.5");
+            }
+            function redirectToInstagram(){
+                window.location.assign(" ");
+            }
+            function redirectToTwitter(){
+                window.location.assign(" ");
+            }
+
+        $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 6, 
+            loop: true, 
+            margin: 25, 
+            autoplay: true, 
+            autoplayTimeout: 3500, 
+            autoplayHoverPause: true, 
+            mouseDrag: true
+           
+        });
+    });
         </script>
     </body>
 </html>
