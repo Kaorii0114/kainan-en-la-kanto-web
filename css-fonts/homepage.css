@@ -51,28 +51,29 @@ header.sticky{
     align-items: center;
     padding: 30px;
     background: #e0e0e0;
+    height: 2.7vh;
 }
 header.sticky img{
-    top: -60px;
+    top: -61px;
     transform: scale(0.4);
 }
 header a{
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 525;
-    margin: 0 20px;
-    color: black;   
+    margin: 0 5px;
+    color: #a44018;   
     text-decoration: none;
     margin-right: 100px;
     letter-spacing: 1px;
     transition: 0.6s;
 }
 header.sticky a{
-    font-size: 22px;
+    font-size: 21px;
     color: #a44018;
     font-weight: 500;
 }
 header.sticky a span{
-    font-size: 22px;
+    font-weight: 500;
     color: #a44018;
 }
 header a:nth-child(2):before{
@@ -80,7 +81,7 @@ header a:nth-child(2):before{
     position: absolute;
     content: "";
     bottom: -3px;
-    width: 4.3%;
+    width: 3.8%;
     height: 4px;
     background: #a44018;
     border-radius: 50px;
@@ -89,13 +90,14 @@ header a:nth-child(2):before{
 }
 header.sticky a:nth-child(2):before{
     bottom: 27px;
-    width: 3.6%;
+    width: 3.4%;
+    background: #a44018;
 }
 header a:nth-child(3)::before{
     position: absolute;
     content: "";
     bottom: -3px;
-    width: 13%;
+    width: 6.6%;
     height: 4px;
     background: #a44018;
     border-radius: 50px;
@@ -104,30 +106,30 @@ header a:nth-child(3)::before{
 }
 header.sticky a:nth-child(3):before{
     bottom: 27px;
-    width: 11.2%;
+    width: 5.9%;
+    background: #a44018;
 }
 header a:nth-child(4)::before{
     position: absolute;
     content: "";
     bottom: -3px;
-    width: 6.6%;
+    width: 12%;
     height: 4px;
-    background: #f0f1ed;
+    background: #a44018;
     border-radius: 50px;
     transform: scaleX(0);
     transition: transform 0.2s linear;
-    z-index: 3;
 }
 header.sticky a:nth-child(4):before{
-    background: #a44018;
     bottom: 27px;
-    width: 6%;
+    width: 10.7%;
+    background: #a44018;
 }
 header a:nth-child(5)::before{
     position: absolute;
     content: "";
     bottom: -3px;
-    width: 8.4%;
+    width: 6.2%;
     height: 4px;
     background: #f0f1ed;
     border-radius: 50px;
@@ -138,7 +140,24 @@ header a:nth-child(5)::before{
 header.sticky a:nth-child(5):before{
     background: #a44018;
     bottom: 27px;
-    width: 7.4%;
+    width: 5.7%;
+}
+header a:nth-child(6)::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    width: 8%;
+    height: 4px;
+    background: #f0f1ed;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+    z-index: 3;
+}
+header.sticky a:nth-child(6):before{
+    background: #a44018;
+    bottom: 27px;
+    width: 7%;
 }
 header a:hover::before{
     transform: scaleX(1);

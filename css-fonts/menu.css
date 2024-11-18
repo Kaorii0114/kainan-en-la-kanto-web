@@ -6,6 +6,11 @@
     font-family: GillSans;
     src: url(Gill-Sans.otf);
   }
+  
+  @font-face {
+    font-family: PlayFairDisplay;
+    src: url(playfairdisplay.ttf);
+  }
  *{
     margin: 0;
     padding: 0;
@@ -51,11 +56,11 @@
 }
 .container{
     margin-top: -10px;
-    background-color: #f0f1ed;
     width: 100%;
     max-height: fit-content;
     display: flex;
     flex-direction: column;
+    
 }
 .foodclass{
     width: 100%;
@@ -92,6 +97,8 @@
 }
 .foodclass .foodclass-holder-row1 .foodclass-header-description-holder p{
     font-size: 22px;
+    letter-spacing: 1.3px;
+    line-height: 27px;
 }
 .foodclass .foodclass-menu-holder-row2 {
     width: 100%;
@@ -179,20 +186,51 @@
     background-color: #6e6c2f;
 }
 .parallax-parallax-img1{
-    height: 375px; 
+    height: 450px; 
     background-attachment: fixed; 
     background-position: 50%;
     background-image: url('../img/parallax-img-1.png'); 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
 }
 .parallax-parallax-img2{
-    height: 375px; 
+    height: 450px; 
     background-attachment: fixed; 
     background-position: 50%;
     background-image: url('../img/parallax-img-2-tint.png'); 
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+}
+.parallax-parallax-img3{
+    height: 450px; 
+    background-attachment: fixed; 
+    background-position: 50%;
+    background-image: url('../img/coconut-parallax.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+}
+.parallax-text-wrapper{
+    width: 50%;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-family: PlayFairDisplay;
+    color: #f0f1ed;
+} 
+.parallax-text-wrapper .parallax-text h2{
+    color: #f0f1ed;
+    font-size: 89px;
+    font-weight: bold;
 }
 header{
     width: 100%;
@@ -232,9 +270,9 @@ header.sticky img{
     transform: scale(0.4);
 }
 header a{
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 525;
-    margin: 0 20px;
+    margin: 0 5px;
     color: #f0f1ed;   
     text-decoration: none;
     margin-right: 100px;
@@ -242,7 +280,7 @@ header a{
     transition: 0.6s;
 }
 header.sticky a{
-    font-size: 22px;
+    font-size: 21px;
     color: #a44018;
     font-weight: 500;
 }
@@ -251,7 +289,7 @@ header a:nth-child(2):before{
     position: absolute;
     content: "";
     bottom: -3px;
-    width: 4.3%;
+    width: 3.8%;
     height: 4px;
     background: #f0f1ed;
     border-radius: 50px;
@@ -260,26 +298,10 @@ header a:nth-child(2):before{
 }
 header.sticky a:nth-child(2):before{
     bottom: 27px;
-    width: 3.6%;
+    width: 3.4%;
     background: #a44018;
 }
 header a:nth-child(3)::before{
-    position: absolute;
-    content: "";
-    bottom: -3px;
-    width: 13%;
-    height: 4px;
-    background: #f0f1ed;
-    border-radius: 50px;
-    transform: scaleX(0);
-    transition: transform 0.2s linear;
-}
-header.sticky a:nth-child(3):before{
-    bottom: 27px;
-    width: 11.2%;
-    background: #a44018;
-}
-header a:nth-child(4)::before{
     position: absolute;
     content: "";
     bottom: -3px;
@@ -289,18 +311,33 @@ header a:nth-child(4)::before{
     border-radius: 50px;
     transform: scaleX(0);
     transition: transform 0.2s linear;
-    z-index: 3;
+}
+header.sticky a:nth-child(3):before{
+    bottom: 27px;
+    width: 5.9%;
+    background: #a44018;
+}
+header a:nth-child(4)::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    width: 12%;
+    height: 4px;
+    background: #f0f1ed;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
 }
 header.sticky a:nth-child(4):before{
-    background: #a44018;
     bottom: 27px;
-    width: 6%;
+    width: 10.7%;
+    background: #a44018;
 }
 header a:nth-child(5)::before{
     position: absolute;
     content: "";
     bottom: -3px;
-    width: 8.4%;
+    width: 6.2%;
     height: 4px;
     background: #f0f1ed;
     border-radius: 50px;
@@ -311,7 +348,24 @@ header a:nth-child(5)::before{
 header.sticky a:nth-child(5):before{
     background: #a44018;
     bottom: 27px;
-    width: 7.4%;
+    width: 5.7%;
+}
+header a:nth-child(6)::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    width: 8%;
+    height: 4px;
+    background: #f0f1ed;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+    z-index: 3;
+}
+header.sticky a:nth-child(6):before{
+    background: #a44018;
+    bottom: 27px;
+    width: 7%;
 }
 header a:hover::before{
     transform: scaleX(1);
