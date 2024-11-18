@@ -1,0 +1,116 @@
+.foodclass .foodclass-menu-holder-row3{
+    width: 100%;
+    height: 50vh;
+    background-color: #f0f1ed;
+    display: flex;
+    justify-content: center;
+}
+.foodclass-menu-holder-row3 .menu-tap-specialties-dessert{
+    margin-top: 30px;
+    height: 45vh;
+    width: 72.5%;
+    display: flex;
+    font-family: TheSeasons;
+    
+}
+.foodclass-menu-holder-row3 .menu-tap-specialties-dessert .tab-dishes-holder{
+    width: 25.5%;
+    height: 45vh;
+}
+.foodclass-menu-holder-row3 .menu-tap-specialties-dessert .tab-description-holder{
+    width: 72.5%;
+    height: 45vh;
+}
+.foodclass-menu-holder-row3 .menu-tap-specialties-dessert li{
+    list-style: none;
+}
+.tab-dishes-holder {
+    position: relative; 
+}
+.tab-dishes-holder .tab-dishes {
+    position: relative; 
+}
+.tab-dishes-holder ul{
+    padding: 0 0;
+	border-right: 3px solid #ccc;  
+}  
+.menu-tap-specialties-dessert .tab-dishes-holder .tab-dishes li{
+    display: flex;
+	align-items: center;
+	grid-gap: .5rem;
+	padding: 15px 2rem;
+	cursor: pointer;
+	font-size: 25px;
+    font-weight: bold;
+	border-right: 3px solid transparent;
+    position: relative;
+    transition: border-right-color .5s ease, transform 0.1s ease;
+}
+.menu-tap-specialties-dessert .tab-indicator{
+    position: absolute;
+    width: 4px;
+    height: 60px;
+    background: black;
+    left: 347px;
+    top: -5px;
+    transition: all 500ms ease-in-out;
+}
+.menu-tap-specialties-dessert .tab-dishes-holder .tab-dishes li:hover {
+    transform: translateY(-3px);
+}
+.menu-tap-specialties-dessert .tab-description-holder .tab-description{
+    padding: 20px 25px;
+}
+.menu-tap-specialties-dessert .tab-description-holder{
+    overflow: hidden
+}
+.menu-tap-specialties-dessert .tab-description-holder .tab-description li{
+    max-height: 0;
+    visibility: hidden; 
+    opacity: 0; 
+    transform: translateX(-20px); 
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.menu-tap-specialties-dessert .tab-description-holder .tab-description li.active{
+    max-height: 500px;
+    visibility: visible;
+    opacity: 1; 
+    transform: translateX(0);
+}
+.menu-tap-specialties-dessert .tab-description-holder .tab-description .tab-description-inner{
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+}
+.menu-tap-specialties-dessert .tab-description-holder .tab-description li .description-text{
+    width: 70%;
+    text-align: left;
+}
+.menu-tap-specialties-dessert .tab-description-holder .tab-description li h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.menu-tap-specialties-dessert .tab-description-holder .tab-description li h5{
+    font-size: 27px;
+    font-weight: 600;
+    color: #333333;
+    letter-spacing: 1.4px;
+    margin-bottom: 20px;
+}
+.menu-tap-specialties-dessert .tab-description-holder .tab-description li p{
+    font-size: 21px;
+    font-family: PlayFairDisplay;
+    margin-bottom: 35px;
+}
+.menu-tap-specialties-dessert .tab-description-holder .tab-description li span{
+    font-size: 30px;
+    font-weight: 600;
+}
+.menu-tap-specialties-dessert.tab-description-holder .tab-description li img{
+    margin-top: -20px;
+    margin-left: 20px;
+    height: 38vh;
+    width: auto;
+    border-radius: 35px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .8);
+}
