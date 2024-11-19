@@ -1,40 +1,25 @@
-.foodclass .foodclass-menu-holder-row3{
-    width: 100%;
-    height: 50vh;
-    background-color: #f0f1ed;
-    display: flex;
-    justify-content: center;
-}
-.foodclass-menu-holder-row3 .menu-tap-specialties-dessert{
-    margin-top: 30px;
-    height: 45vh;
-    width: 72.5%;
-    display: flex;
-    font-family: TheSeasons;
-    
-}
-.foodclass-menu-holder-row3 .menu-tap-specialties-dessert .tab-dishes-holder{
+.foodclass-menu-holder-row3 .menu-tab-specialties .tab-dishes-holder-dessert{
     width: 25.5%;
     height: 45vh;
 }
-.foodclass-menu-holder-row3 .menu-tap-specialties-dessert .tab-description-holder{
+.foodclass-menu-holder-row3 .menu-tab-specialties .tab-description-holder{
     width: 72.5%;
     height: 45vh;
 }
-.foodclass-menu-holder-row3 .menu-tap-specialties-dessert li{
+.foodclass-menu-holder-row3 .menu-tab-specialties li{
     list-style: none;
 }
-.tab-dishes-holder {
+.tab-dishes-holder-dessert{
     position: relative; 
 }
-.tab-dishes-holder .tab-dishes {
+.tab-dishes-holder-dessert .tab-dishes-dessert {
     position: relative; 
 }
-.tab-dishes-holder ul{
+.tab-dishes-holder-dessert ul{
     padding: 0 0;
 	border-right: 3px solid #ccc;  
 }  
-.menu-tap-specialties-dessert .tab-dishes-holder .tab-dishes li{
+.tab-dishes-holder-dessert .tab-dishes-dessert li{
     display: flex;
 	align-items: center;
 	grid-gap: .5rem;
@@ -46,67 +31,67 @@
     position: relative;
     transition: border-right-color .5s ease, transform 0.1s ease;
 }
-.menu-tap-specialties-dessert .tab-indicator{
+.tab-indicator3{
     position: absolute;
-    width: 4px;
+    width: 3.5px;
     height: 60px;
     background: black;
-    left: 347px;
+    left: 347.5px;
     top: -5px;
     transition: all 500ms ease-in-out;
 }
-.menu-tap-specialties-dessert .tab-dishes-holder .tab-dishes li:hover {
+.tab-dishes-holder-dessert .tab-dishes-dessert li:hover {
     transform: translateY(-3px);
 }
-.menu-tap-specialties-dessert .tab-description-holder .tab-description{
+.tab-description-holder .tab-description-dessert{
     padding: 20px 25px;
 }
-.menu-tap-specialties-dessert .tab-description-holder{
+.tab-description-holder{
     overflow: hidden
 }
-.menu-tap-specialties-dessert .tab-description-holder .tab-description li{
+.tab-description-holder .tab-description-dessert li{
     max-height: 0;
     visibility: hidden; 
     opacity: 0; 
     transform: translateX(-20px); 
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
-.menu-tap-specialties-dessert .tab-description-holder .tab-description li.active{
+.tab-description-holder .tab-description-dessert li.active{
     max-height: 500px;
     visibility: visible;
     opacity: 1; 
     transform: translateX(0);
 }
-.menu-tap-specialties-dessert .tab-description-holder .tab-description .tab-description-inner{
+.tab-description-holder .tab-description-dessert .tab-description-inner{
     display: flex;
     justify-content: space-between; 
     align-items: flex-start;
 }
-.menu-tap-specialties-dessert .tab-description-holder .tab-description li .description-text{
+.tab-description-holder .tab-description-dessert li .description-text{
     width: 70%;
     text-align: left;
 }
-.menu-tap-specialties-dessert .tab-description-holder .tab-description li h1{
+.tab-description-holder .tab-description-dessert li h1{
     font-size: 45px;
     margin-bottom: 20px;
 }
-.menu-tap-specialties-dessert .tab-description-holder .tab-description li h5{
+.tab-description-holder .tab-description-dessert li h5{
     font-size: 27px;
     font-weight: 600;
     color: #333333;
     letter-spacing: 1.4px;
     margin-bottom: 20px;
 }
-.menu-tap-specialties-dessert .tab-description-holder .tab-description li p{
+.tab-description-holder .tab-description-dessert li p{
     font-size: 21px;
     font-family: PlayFairDisplay;
     margin-bottom: 35px;
 }
-.menu-tap-specialties-dessert .tab-description-holder .tab-description li span{
+.tab-description-holder .tab-description-dessert li span{
     font-size: 30px;
     font-weight: 600;
 }
-.menu-tap-specialties-dessert.tab-description-holder .tab-description li img{
+.tab-description-holder .tab-description-dessert li img{
     margin-top: -20px;
     margin-left: 20px;
     height: 38vh;

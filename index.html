@@ -179,7 +179,7 @@
                         <img src="img/beef-chimichichangas.png">
                         <img src="img/pork-sinigang.png">
                     </div>
-                    <P> For all the latest news and updates, follow us on Instagram: <a href="https://www.instagram.com/"> @kainan_en_la_kanto </a></P>
+                    <P> For all the latest news and updates, follow us on Instagram: <a href="https://www.instagram.com/kainan_en_la_kanto/?fbclid=IwZXh0bgNhZW0CMTEAAR2ViMAD1sJm4H_ZP6yynwJCnDnlCBEW4k22c2O4pVwo2AarL4-3M7tsGug_aem_0ubQGQwAoowBTMGbfEGCIA"> @kainan_en_la_kanto </a></P>
                 </div>
                 
                     <img src="img/kainan-black-bg.png">
@@ -191,7 +191,7 @@
                 <div class="icons">
                     <img src="img/facebook-icon.png" onclick="redirectToFacebook()"> 
                     <img src="img/discord-icon.png" onclick="redirectToDiscord()">
-                    <img src="img/instagram-icon.png" onclick="redirectToDiscord()">
+                    <img src="img/instagram-icon.png" onclick="redirectToInstagram()">
                     <img src="img/twitter-icon.png" onclick="redirectToDiscord()">
                 </div>
                 </div>
@@ -200,27 +200,8 @@
         
         <script src="js/jquery-3.7.1.min.js"></script>
         <script src="js/owl.carousel.js"></script>
+        <script src="js/header-footer.js"></script>
         <script type="text/javascript">
-            window.addEventListener("scroll", function(){
-                var navbar = document.querySelector("header");
-                navbar.classList.toggle("sticky", window.scrollY > 0);
-            })
-
-            function redirectToMenu(){  
-                window.location.href = "menu.html";
-            }
-            function redirectToFacebook(){
-                window.location.assign("https://www.facebook.com/people/Kainan-En-La-Kanto/61568619036341/");
-            }
-            function redirectToDiscord(){
-                window.location.assign("https://www.facebook.com/khirstenadrian.flora.5");
-            }
-            function redirectToInstagram(){
-                window.location.assign(" ");
-            }
-            function redirectToTwitter(){
-                window.location.assign(" ");
-            }
 
         $(document).ready(function(){
         $(".owl-carousel").owlCarousel({

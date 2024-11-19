@@ -1,6 +1,6 @@
-<div class="menu-tab-specialties-dessert">
-    <div class="tab-dishes-holder">
-        <ul class="tab-dishes">
+<div class="menu-tab-specialties">
+    <div class="tab-dishes-holder-dessert">
+        <ul class="tab-dishes-dessert">
             <li class="active" data-target="#buko-pie"> Buko Pie </li>
             <li data-target="#coconut-flan">Coconut Flan</li>
             <li data-target="#turon">Turon</li>
@@ -11,7 +11,7 @@
         <div class="tab-indicator"></div>
     </div>
     <div class="tab-description-holder">
-        <ul class="tab-description">
+        <ul class="tab-description-dessert">
             <li class="active" id="buko-pie"> 
                 <div class="tab-description-inner">
                     <div class="description-text">
@@ -81,3 +81,124 @@
         </ul>
     </div>
 </div>
+
+
+<div class="tab-dishes-holder-main">
+    <ul class="tab-dishes-main">
+        <li class="active" data-target="#birria-taco"> Birria Tacos </li>
+        <li data-target="#quesadilla">Quesadilla</li>
+        <li data-target="#chicken-adobo">Chicken Adobo</li>
+        <li data-target="#bistek-tagalog">Bistek Tagalog</li>
+        <li data-target="#chicken-tortilla">Chicken Torilla</li>
+        <li data-target="#chiles-en-nogada">Chiles En Nogada </li>
+    </ul>
+    <div class="tab-indicator3"></div>
+    </div>
+    <div class="tab-description-holder">
+    <ul class="tab-description-main">
+        <li class="active" id="birria-taco"> 
+            <div class="tab-description-inner">
+                <div class="description-text">
+                    <h1> Most popular selection </h1>
+                    <h5>Authentic Delicious Birria Tacos</h5>
+                    <p>Tender slow-cooked beef or goat in a rich broth, served in crispy tortillas with melted cheese. Paired with a flavorful dipping consommé for a savory experience.</p>
+                    <span>₱ 359</span>
+                    </div>
+                    <img src="img/birria_tacos.png">
+            </div>
+        </li>
+        <li id="quesadilla"> 
+            <div class="tab-description-inner">
+                <div class="description-text">
+                    <h1> All Time Classic </h1>
+                    <h5>Authentic Delicious Quesadilla</h5>
+                    <p>A golden, crispy tortilla filled with melted cheese and savory fillings like chicken or beef. Perfectly crunchy on the outside, cheesy and flavorful inside.</p>
+                    <span>₱ 389</span>
+                    </div>
+                    <img src="img/Gorditas.png">
+            </div>
+        </li>
+        <li id="chicken-adobo"> 
+            <div class="tab-description-inner">
+                <div class="description-text">
+                    <h1> Exclusive Dish </h1>
+                    <h5>Authentic Delicious Chicken Adobo</h5>
+                    <p>A classic Filipino dish of tender chicken simmered in a savory blend of soy sauce, vinegar, garlic, and bay leaves. Rich, tangy, and full of bold flavors, its a comforting and deliciously satisfying meal</p>
+                    <span>₱ 299</span>
+                    </div>
+                    <img src="img/chicken_adobo.png">
+            </div>
+        </li>
+        <li id="bistek-tagalog"> 
+            <div class="tab-description-inner">
+                <div class="description-text">
+                    <h1> Best with a Partner </h1>
+                    <h5>Authentic Delicious Bistek Tagalog</h5>
+                    <p>Tender beef marinated in soy sauce, garlic, and citrus, then sautéed with onions. A savory Filipino classic with a tangy, comforting flavor.</p>
+                    <span>₱ 500</span>
+                    </div>
+                    <img src="img/bistek-tagalog.png">
+            </div>
+        </li>
+        <li id="chicken-tortilla"> 
+            <div class="tab-description-inner">
+                <div class="description-text">
+                    <h1> Signature Choice </h1>
+                    <h5>Authentic Delicious Chicken Torilla</h5>
+                    <p>Hearty chicken tortilla soup with tender chicken, savory spices, and crispy tortilla strips. Topped with fresh avocado and cilantro for a bold, flavorful dish.</p>
+                    <span>₱ 359</span>
+                    </div>
+                    <img src="img/Fresh-Lumpia.png">
+            </div>
+        </li>
+        <li id="chiles-en-nogada"> 
+            <div class="tab-description-inner">
+                <div class="description-text">
+                    <h1> Universal Favorite </h1>
+                    <h5>Authentic Delicious Taquitos</h5>
+                    <p>Poblano peppers stuffed with a flavorful picadillo of meat, fruits, and spices, topped with creamy walnut sauce. Finished with pomegranate seeds for a rich, sweet, and savory flavor. </p>
+                    <span>₱ 359</span>
+                    </div>
+                    <img src="img/Taquitos.png">
+            </div>
+        </li>
+    </ul>
+    </div>
+</div>
+const DessertIndicator = document.querySelectorAll('.tab-dishes-main li');
+            const  DessertContent = document.querySelectorAll('.tab-description-dessert li');
+            var indicatorDessert = document.querySelector('.tab-indicator3');
+
+            function updateIndicatorPosition Dessert(target) {
+                const tabRect = target.getBoundingClientRect();
+                const holderRect = document.querySelector('.tab-dishes-holder-dessert').getBoundingClientRect();
+    
+    
+                const topPosition = tabRect.top - holderRect.top; 
+                indicatorDessert.style.top = `${topPosition}px`;
+            }
+            updateIndicatorPositionDessert(document.querySelector('.tab-dishes-dessert li.active'));
+
+            MainIndicator.forEach((item) => {
+                item.addEventListener('click', function () {
+                const content = document.querySelector(this.dataset.target);
+
+            MainIndicator.forEach(i => {
+                i.classList.remove('active');
+            });
+
+            MainContent.forEach(i => {
+                i.classList.remove('active');
+            });
+
+                content.classList.add('active');
+                this.classList.add('active');
+
+        
+                updateIndicatorPositionDessert(this);
+                });
+
+                item.addEventListener('mouseover', function () {
+                    updateIndicatorPositionDessert(this);
+                 });
+            });
