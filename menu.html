@@ -509,7 +509,7 @@
                                     <div class="tab-description-inner">
                                         <div class="description-text">
                                             <h1> Universal Favorite </h1>
-                                            <h5>Authentic Delicious Taquitos</h5>
+                                            <h5>Authentic Delicious Chiles En Nogada</h5>
                                             <p>Poblano peppers stuffed with a flavorful picadillo of meat, fruits, and spices, topped with creamy walnut sauce. Finished with pomegranate seeds for a rich, sweet, and savory flavor. </p>
                                             <span>₱ 359</span>
                                             </div>
@@ -944,9 +944,9 @@
                 <div class="instagram-page">
                     <h1> FOLLOW US</h1>
                     <div class="ig-pics-redirect"> 
-                        <img src="img/beef-lumpia.png">
-                        <img src="img/beef-chimichichangas.png">
-                        <img src="img/pork-sinigang.png">
+                        <img src="img/beef-lumpia.png" onclick="igPost1()">
+                        <img src="img/beef-chimichichangas.png" onclick="igPost2()">
+                        <img src="img/pork-sinigang.png" onclick="igPost3()">
                     </div>
                     <P> For all the latest news and updates, follow us on Instagram: <a href="https://www.instagram.com/kainan_en_la_kanto/?fbclid=IwZXh0bgNhZW0CMTEAAR2ViMAD1sJm4H_ZP6yynwJCnDnlCBEW4k22c2O4pVwo2AarL4-3M7tsGug_aem_0ubQGQwAoowBTMGbfEGCIA"> @kainan_en_la_kanto </a></P>
                 </div>
@@ -956,7 +956,7 @@
                 <div class="contact">
                     <h1> CONTACT</h1>
 
-                    <p> Corner Street Side along Hambriento Ave. & Avaro Drive by Sangrado Vaginal, 911420, E.X., Philippines</p>
+                    <p> Corner Street Side along Hambriento Ave. & Avaro Drive by Sangrado Vaginal, 911420, LAB D, Philippines</p>
                 <div class="icons">
                     <img src="img/facebook-icon.png" onclick="redirectToFacebook()"> 
                     <img src="img/discord-icon.png" onclick="redirectToDiscord()">
@@ -1020,7 +1020,9 @@
                 const topPosition = tabRect.top - holderRect.top; 
                 indicatorMain.style.top = `${topPosition}px`;
             }
-            updateIndicatorPositionMain(document.querySelector('.tab-dishes-main li.active'));
+
+            let activeTabMain = document.querySelector('.tab-dishes-main li.active');
+            updateIndicatorPositionMain(activeTabMain);
 
             MainIndicator.forEach((item) => {
                 item.addEventListener('click', function () {
@@ -1037,7 +1039,8 @@
                 content.classList.add('active');
                 this.classList.add('active');
 
-        
+                activeTabMain = this;
+
                 updateIndicatorPositionMain(this);
                 });
 
@@ -1045,6 +1048,12 @@
                     updateIndicatorPositionMain(this);
                  });
             });
+            const tabDishesHolderMain = document.querySelector('.tab-dishes-holder-main');
+            tabDishesHolderMain.addEventListener('mouseleave', function () {
+
+                updateIndicatorPositionMain(activeTabMain);
+});
+
 
             const DessertIndicator = document.querySelectorAll('.tab-dishes-dessert li');
             const  DessertContent = document.querySelectorAll('.tab-description-dessert li');
@@ -1058,7 +1067,9 @@
                 const topPosition = tabRect.top - holderRect.top; 
                 indicatorDessert.style.top = `${topPosition}px`;
             }
-            updateIndicatorPositionDessert(document.querySelector('.tab-dishes-dessert li.active'));
+            
+            let activeTab = document.querySelector('.tab-dishes-dessert li.active');
+            updateIndicatorPositionDessert(activeTab);
 
             DessertIndicator.forEach((item) => {
                 item.addEventListener('click', function () {
@@ -1075,13 +1086,20 @@
                 content.classList.add('active');
                 this.classList.add('active');
 
-        
+                activeTab = this;
                 updateIndicatorPositionDessert(this);
                 });
 
                 item.addEventListener('mouseover', function () {
                     updateIndicatorPositionDessert(this);
                  });
+   
+            });
+
+            const tabDishesHolder = document.querySelector('.tab-dishes-holder-dessert');
+            tabDishesHolder.addEventListener('mouseleave', function () {
+    
+                updateIndicatorPositionDessert(activeTab);
             });
             
            

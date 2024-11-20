@@ -165,19 +165,24 @@
     </ul>
     </div>
 </div>
-const DessertIndicator = document.querySelectorAll('.tab-dishes-main li');
-            const  DessertContent = document.querySelectorAll('.tab-description-dessert li');
-            var indicatorDessert = document.querySelector('.tab-indicator3');
+<script>
 
-            function updateIndicatorPosition Dessert(target) {
+
+const MainIndicator = document.querySelectorAll('.tab-dishes-main li');
+            const MainContent = document.querySelectorAll('.tab-description-main li');
+            var indicatorMain = document.querySelector('.tab-indicator2');
+
+            function updateIndicatorPositionMain(target) {
                 const tabRect = target.getBoundingClientRect();
-                const holderRect = document.querySelector('.tab-dishes-holder-dessert').getBoundingClientRect();
+                const holderRect = document.querySelector('.tab-dishes-holder-main').getBoundingClientRect();
     
     
                 const topPosition = tabRect.top - holderRect.top; 
-                indicatorDessert.style.top = `${topPosition}px`;
+                indicatorMain.style.top = `${topPosition}px`;
             }
-            updateIndicatorPositionDessert(document.querySelector('.tab-dishes-dessert li.active'));
+
+            let activeTabMain = document.querySelector('.tab-dishes-main li.active');
+            updateIndicatorPositionDessert(activeTabMain);
 
             MainIndicator.forEach((item) => {
                 item.addEventListener('click', function () {
@@ -194,11 +199,19 @@ const DessertIndicator = document.querySelectorAll('.tab-dishes-main li');
                 content.classList.add('active');
                 this.classList.add('active');
 
-        
-                updateIndicatorPositionDessert(this);
+                activeTab = this;
+
+                updateIndicatorPositionMain(this);
                 });
 
                 item.addEventListener('mouseover', function () {
-                    updateIndicatorPositionDessert(this);
+                    updateIndicatorPositionMain(this);
                  });
             });
+            const tabDishesHolderMain = document.querySelector('.tab-dishes-holder-main');
+            tabDishesHolderMain.addEventListener('mouseleave', function () {
+
+                updateIndicatorPositionDessert(activeTabMain);
+});
+
+</script>

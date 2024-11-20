@@ -728,7 +728,8 @@ header a span{
  .footer-container .instagram-page .ig-pics-redirect img{
     width: 150px;
     height: auto;
-    margin: 10px
+    margin: 10px;
+    cursor: pointer;
  }
  .footer-container .instagram-page p{
     font-family: GillSans;
