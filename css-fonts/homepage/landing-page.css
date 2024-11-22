@@ -1,0 +1,175 @@
+#first-link , #second-link , #third-link{
+    color: #a44018;
+ }
+.container{
+    background-color: #f0f1ed;
+    width: 100%;
+    height: 100vh;
+}
+.wavy_bg{
+    position: absolute;
+    right: 0px;
+    height: 135vh;
+}
+.fusion_food{
+    width: 850;
+    height: 805;
+    position: absolute;
+    right: 110px;
+    top: 205px;
+}
+.Landing_page{
+    width: 40%;
+    height: 40vh;
+    position: relative;
+    top: 330px;
+    left: 90px;
+}
+.Landing_page h1{
+    z-index: 2;
+    font-size: 65px;
+    font-family: TheSeasons;
+}
+.Landing_page h2{
+    z-index: 2;
+    font-size: 36px;
+    font-weight: 100;
+    margin-top: 19px;
+    font-family: TheSeasons;
+}
+.Landing_page h3 {
+    width: 600px;
+    height: 100px;
+    margin-top: 40px;
+    font-size: 30px;
+    font-family: TheSeasons;
+    letter-spacing: 1px;
+    line-height: 40px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 100;
+}
+.Landing_page h3 span{
+    font-family: Arial;
+}
+.Landing_page h3 font{
+    font-weight: bold;
+}
+.menu_btn{
+    
+    font-family: TheSeasons;
+    font-size: 30px;
+    padding: 25px;
+    border-radius: 35px;
+    font-weight: bold;
+    background-color: #a44018;
+    border: #a44018;
+    margin-top: 70px;
+    margin-left: 170px;
+    box-shadow: 3px 3px 10px black;
+    transition: 0.3s ease all;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+.menu_btn a{
+    color: #f0f1ed;
+    text-decoration: none;
+}
+.menu_btn:active{
+    transform: scale(0.9);
+}
+#hr2{
+    display: none;
+}
+
+  /* 2xl */
+ @media (max-width: 1536px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .fusion_food{
+        
+        right: 110px;
+        top: 205px;
+    }
+  } 
+  
+  /* xl */
+  @media (max-width: 1280px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .container{
+        height: 70vh;
+    }
+    .wavy_bg{
+        height: 107vh;
+    }
+    .fusion_food{
+        width: 535px;
+        height: 490px;
+        right: 90px;
+        top: 115px;
+    }
+    .Landing_page{
+        top: 300px;
+        left: 50px;
+    }
+    .Landing_page h1{
+        z-index: 2;
+        font-size: 45px;
+        font-family: TheSeasons;
+    }
+    .Landing_page hr{
+        width: 100px;
+    }
+    #hr2{
+        display: block;
+    }
+    #hr1{
+        display: none;
+    }
+    .Landing_page h2{
+        font-size: 26px;
+        margin-top: 5px;
+    }
+    .Landing_page h3 {
+        width: 400px;
+        height: 70px;
+        margin-top: 20px;
+        font-size: 23px;
+        font-family: TheSeasons;
+        line-height: 2rem;
+    }
+    .menu_btn{
+        font-size: 19px;
+        padding: 25px;
+        border-radius: 35px;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+  }
+  
+  /* lg */
+  @media (max-width: 1024px) {
+    
+  }
+  
+  /* md */
+  /* @media (max-width: 768px) {
+    
+  } */
+  
+  /* sm */
+  /* @media (max-width: 640px) {
+    
+  } */
+  
+  /* xs */
+  /* @media (max-width: 475px) {
+    
+  } */

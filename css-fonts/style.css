@@ -1,0 +1,51 @@
+  /* 2xl */
+/* @media (max-width: 1536px) {
+    
+  }
+   */
+  /* xl */
+  /* @media (max-width: 1280px) {
+    
+  } */
+  
+  /* lg */
+  /* @media (max-width: 1024px) {
+    
+  } */
+  
+  /* md */
+  /* @media (max-width: 768px) {
+    
+  } */
+  
+  /* sm */
+  /* @media (max-width: 640px) {
+    
+  } */
+  
+  /* xs */
+  /* @media (max-width: 475px) {
+    
+  } */
+  *{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background: #f0f1ed;;
+}
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+  font-family: PlayFairDisplay;
+  src: url(playfairdisplay.ttf);
+}
+@font-face {
+  font-family: GillSans;
+  src: url(Gill-Sans.otf);
+}
+@font-face {
+    font-family: TheSeasons;
+    src: url(the-seasons-regular.ttf);
+}

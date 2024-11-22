@@ -970,7 +970,7 @@
         <script src="js/header-footer.js"></script>
         <script type="text/javascript">
 
-            const StarterIndicator = document.querySelectorAll('.tab-dishes-starter li');
+const StarterIndicator = document.querySelectorAll('.tab-dishes-starter li');
             const StarterContent = document.querySelectorAll('.tab-description-starter li');
             var indicatorStarter = document.querySelector('.tab-indicator1');
 
@@ -982,7 +982,11 @@
                 const topPosition = tabRect.top - holderRect.top; 
                 indicatorStarter.style.top = `${topPosition}px`;
             }
-            updateIndicatorPositionStarter(document.querySelector('.tab-dishes-starter li.active'));
+
+
+            let activeTabStarter = document.querySelector('.tab-dishes-starter li.active');
+            updateIndicatorPositionStarter(activeTabStarter
+            );
 
             StarterIndicator.forEach((item) => {
                 item.addEventListener('click', function () {
@@ -999,7 +1003,8 @@
                 content.classList.add('active');
                 this.classList.add('active');
 
-        
+                activeTabStarter = this;
+
                 updateIndicatorPositionStarter(this);
                 });
 
@@ -1007,6 +1012,13 @@
                     updateIndicatorPositionStarter(this);
                  });
             });
+
+            const tabDishesHolderStarter = document.querySelector('.tab-dishes-holder-starter');
+            tabDishesHolderStarter.addEventListener('mouseleave', function () {
+
+                updateIndicatorPositionStarter(activeTabStarter);
+});
+
 
             const MainIndicator = document.querySelectorAll('.tab-dishes-main li');
             const MainContent = document.querySelectorAll('.tab-description-main li');

@@ -1,0 +1,168 @@
+.item{
+    text-align: center;
+    color: #f0f1ed;
+    cursor: grab;
+    background: #f0f1ed;
+}
+.reservation-holder{
+    width: 100%;
+    height: 67vh;
+    background: #f0f1ed;
+}
+.reservation-header h2{
+    position: relative;
+    padding-top: 70px;
+    font-family: TheSeasons;
+    font-size: 35px;
+    font-weight: 100;
+    color: #6e6c2f;
+    text-align: center;
+}
+.reservation-header h1{
+    padding: 10px;
+    position: relative;
+    font-family: TheSeasons;
+    font-size: 69px;
+    font-weight: 525;
+    text-align: center;
+    color: #a44018;
+}
+.reservation-header .reservation-middle{
+    margin-top: 10px;
+    font-size: 37px;
+    font-family: TheSeasons;
+    width: 1000px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.reservation-header .reservation-middle span{
+    font-family: Arial;
+}
+.reservation-holder .reservation-form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+}
+.reservation-holder .reservation-form form select{
+    width: 399.9px;
+    height: 61px;
+    text-align: left;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-left: 10px;
+    color: #909090;
+    margin-right: 10px;
+    padding-left: 20px;
+    border: 2px solid #a9a9a9;
+}
+.reservation-holder .reservation-form form #date{
+    width: 399.9px;
+    height: 57px;
+    text-indent: 1px;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding-left: 20px;
+    color: #909090;
+    border: 2px solid #a9a9a9;
+}
+.submit-btn-reservation-holder{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.submit-btn-reservation-holder .submit-btn-reservation{
+    position: relative;
+    width: 170px;
+    height: 54px;
+    border: 2px solid #a9a9a9;
+    background: transparent;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    color: #a9a9a9;
+    z-index: 1;
+    transition: color 0.5s linear;
+}
+.submit-btn-reservation-holder .submit-btn-reservation:hover{
+    color: #f0f1ed;
+}
+.submit-btn-reservation-holder .submit-btn-reservation::before{
+    color: #f0f1ed;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #333333;
+    z-index: -1;
+    transition: transform 0.5s;
+    border: 2px solid #333333;
+    transform-origin: 0 0;
+}
+.submit-btn-reservation-holder .submit-btn-reservation::before{
+    transform: scaleX(0);
+}
+.submit-btn-reservation-holder .submit-btn-reservation:hover::before{
+    transform: scaleX(1);
+}
+
+  /* 2xl */
+/* @media (max-width: 1536px) {
+    
+  }
+   */
+  /* xl */
+  @media (max-width: 1280px) {
+    .reservation-header h2{
+        padding-top: 50px;
+        font-size: 28px;
+    }
+    .reservation-header h1{
+        padding: 10px;
+        font-size: 63px;
+    }
+    .reservation-header .reservation-middle{
+        margin-top: 10px;
+        font-size: 31px;
+        width: 950px;
+    }
+    .reservation-holder .reservation-form form select{
+        width: 329.9px;
+        margin-right: -.5px;
+    }
+    .reservation-holder .reservation-form form #date{
+        width: 329.9px;
+        margin-right: -10px;
+    }
+
+  }
+  
+  /* lg */
+  /* @media (max-width: 1024px) {
+    
+  } */
+  
+  /* md */
+  /* @media (max-width: 768px) {
+    
+  } */
+  
+  /* sm */
+  /* @media (max-width: 640px) {
+    
+  } */
+  
+  /* xs */
+  /* @media (max-width: 475px) {
+    
+  } */

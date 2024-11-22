@@ -2,7 +2,12 @@
 <html>
     <head>
         <title> KAINAN EN LA KANTO </title>
-        <link rel="stylesheet" href="css-fonts/homepage.css">
+        <link rel="stylesheet" href="css-fonts/style.css">
+        <link rel="stylesheet" href="css-fonts/footer.css">
+        <link rel="stylesheet" href="css-fonts/header.css">
+        <link rel="stylesheet" href="css-fonts/homepage/specialties.css">
+        <link rel="stylesheet" href="css-fonts/homepage/landing-page.css">
+        <link rel="stylesheet" href="css-fonts/homepage/r">
         <link rel="stylesheet" href="css-fonts/owl-carousel-min.css">
         <link rel="stylesheet" href="css-fonts/owl-default-theme-min.css">
         <link rel="icon" href="img/KAINAN_LOGO.png" type="image/icon type">
@@ -11,189 +16,206 @@
     </head>
     <body>
         <header>
-            <img src="img/KAINAN_LOGO_NOBG.png">
-                <a href="">HOME</a>
-                <a href="menu.html">OUR MENU</a>
-                <a href="merchandise.html">OUR MERCHANDISE</a>
-                <a href="about.html"><span>ABOUT US</span></a>
-                <a href="contact.html"><span>CONTACT US</span></a>
+            <h3 class="header-cp">KAINAN EN LA KANTO</h3>
+            <img src="img/KAINAN_LOGO_NOBG.png" alt="LOGO" class="header-logo">
+                <a href="index.html" class="header-link" id="first-link">HOME</a>
+                <a href="menu.html" class="header-link"id="second-link">OUR MENU</a>
+                <a href="merchandise.html" class="header-link"id="third-link">OUR MERCHANDISE</a>
+                <a href="about.html" class="header-link">ABOUT US</a>
+                <a href="contact.html" class="header-link" id="last-link">CONTACT US</a>
+                
+                <button class="header-bars">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                      </svg>
+                                           
+                </button>
         </header>
-        <div class="container">
+        <main>
+            <section>
+                <div class="container">
             
-            <img src="img/wavy_BG.png" class="wavy_bg">
-            
-           
-                <img src="img/fusion_food.png" class="fusion_food">
-                <div class="Landing_page">
-                    <h1>   
-                        <font color="#6e6c2f">TACO,</font>
-                        <font color="#c03b2a">ADOBO,</font>
-                        REPEAT
-                    </h1>
-                    <hr style="height: 5px; background: linear-gradient(to right, #6e6c2f 28%, #c03b2a 28%, #c03b2a 66%, black 66%, black 100%  );
-                    width: 696px; ">
-
-                    <h2> 
-                        <font color="#6e6c2f">Bite Into the </font>
-                        <font color="#c03b2a">Best of Both Worlds</font>
-                        <font face="sans-Serif" color="#c03b2a">!</font>
-                        </h2>
-                    <h3>
-                        Try  our  very  own  Filipino<span>-</span>Mexican 
-                        <br> foods here at <font color="#6e6c2f">KAINAN EN </font> <font color="#c03b2a">LA KANTO</font>
-                    </h3>
-
-                    <button class="menu_btn" onclick="redirectToMenu()"> <a href="menu.html">VIEW OUR MENU </a></button>
-                </div>
-        </div>
-        <div class="specialties">
-            <img src="img/divider.png" class="divider_img">
-            <h1>Fusion on Your Plate, Happiness in Your Heart</h1>
-            <h2> The Art of Delicious </h2>
-            <h3> OUR SPECIALTIES </h3>
-            
-        </div>
-        <div class="food_specialties">
-            <div class="food_specialties_1">
-                <img src="img/chicken_adobo.png">
-                <div class="fs-holder1">
-                    <h2> The Art of Delicious </h2>
-                    <h1> Chicken Adobo </h1>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button class="food_btn1" onclick="redirectToMenu()"><span></span> VIEW OUR MENU </button>
-                </div>
-            </div>
-
-            <div class="food_specialties_2">
-                <div class="fs-holder2">
-                    <h2> The Art of Delicious </h2>
-                    <h1> Birria Tacos </h1>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <button class="food_btn1" onclick="redirectToMenu()"><span></span> VIEW OUR MENU </button>
-                </div>
-                <img src="img/birria_tacos.png">
-            </div>
-
-            <div class="food_specialties_3">
-                <img src="img/beef_burritos.png">
-                <div class="fs-holder3">
-                    <h2> The Art of Delicious </h2>
-                    <h1> Beef Burrito </h1>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <button class="food_btn1" onclick="redirectToMenu()"> VIEW OUR MENU </button>
-                </div>
-                
-            </div>
-            
-        </div>
-        <div class="owl-carousel-holder">
-            <div class="owl-carousel">
-                <div class="item"><img src="img/owl-sisig.png" ></div>
-                <div class="item"><img src="img/owl-enchiladas.png"></div>
-                <div class="item"><img src="img/owl-bangus.png"></div>
-                <div class="item"><img src="img/owl-quesedilla.png"></div>
-                <div class="item"><img src="img/owl-lckawali.png"></div>
-                <div class="item"><img src="img/owl-taco.png"></div>
-            </div>
-        </div>
-        <div class="reservation-holder">
-           <div class="reservation-header">
-                <h2> The Art of Delicious </h2>
-                <h1> Book A Table</h1>
-                <div class="reservation-middle">
-                    <p>Escape the ordinary, dive into extraordinary flavors – dine with us <span> ! </span> </p>
-                </div>
-                <div class="reservation-form">
-                    <form>
-                            <select name="group-party-number" id="group-party-number">
-                                <option value="1">1 Person</option>
-                                <option value="2">2 People</option>
-                                <option value="3">3 People</option>
-                                <option value="4">4 People</option>
-                                <option value="5">5 People</option>
-                                <option value="6">6 People</option>
-                                <option value="7">7 People</option>
-                                <option value="8">8 People</option>
-                                <option value="9">9 People</option>
-                                <option value="10">10 People</option>
-                              </select>
-                       
-                        
-                            <input type="text" name="date" id="date" value="9/11/01">
-                        
-                            <select name="Time" id="1">
-                                <option value="5:30pm">6:30 am</option>
-                                <option value="5:30pm">7:00 am</option>
-                                <option value="5:30pm">7:30 am</option>
-                                <option value="5:30pm">8:00 am</option>
-                                <option value="5:30pm">8:30 am</option>
-                                <option value="5:30pm">9:00 am</option>
-                                <option value="5:30pm">9:30 am</option>
-                                <option value="5:30pm">10:00 am</option>
-                                <option value="5:30pm">10:30 am</option>
-                                <option value="5:30pm">11:00 am</option>
-                                <option value="5:30pm">11:30 am</option>
-                                <option value="5:30pm">12:00 pm</option>
-                                <option value="5:30pm">12:30 pm</option>
-                                <option value="5:30pm">1:00 pm</option>
-                                <option value="5:30pm">1:30 pm</option>
-                                <option value="5:30pm">2:00 pm</option>
-                                <option value="5:30pm">2:30 pm</option>
-                                <option value="5:30pm">3:00 pm</option>
-                                <option value="5:30pm">3:30 pm</option>
-                                <option value="5:30pm">4:00 pm</option>
-                                <option value="5:30pm">4:30 pm</option>
-                                <option value="5:30pm">5:00 pm</option>
-                                <option value="5:30pm">5:30 pm</option>
-                                <option value="6:00pm">6:00 pm</option>
-                                <option value="6:30pm">6:30 pm</option>
-                                <option value="7:00pm">7:00 pm</option>
-                                <option value="7:30pm">7:30 pm</option>
-                                <option value="8:00pm">8:00 pm</option>
-                                <option value="8:30pm">8:30 pm</option>
-                                <option value="9:00pm">9:00 pm</option>
-                                <option value="9:30pm">9:30 pm</option>
-                                <option value="10:00pm">10:00 pm</option>
-                                <option value="10:30pm">10:30 pm</option>
-                                <option value="11:00pm">11:00 pm</option>
-                                <option value="11:30pm">11:30 pm</option>
-                            </select>
+                    <img src="img/wavy_BG.png" class="wavy_bg">
+                    
+                   
+                        <img src="img/fusion_food.png" class="fusion_food">
+                        <div class="Landing_page">
+                            <h1>   
+                                <font color="#6e6c2f">TACO,</font>
+                                <font color="#c03b2a">ADOBO,</font>
+                                REPEAT
+                            </h1>
+                            <hr style="height: 5px; background: linear-gradient(to right, #6e6c2f 28%, #c03b2a 28%, #c03b2a 66%, black 66%, black 100%  );
+                            width: 476px;" id="hr2">
+                            <hr style="height: 5px; background: linear-gradient(to right, #6e6c2f 28%, #c03b2a 28%, #c03b2a 66%, black 66%, black 100%  );
+                            width: 696px;" id="hr1">
+        
+                            <h2> 
+                                <font color="#6e6c2f">Bite Into the </font>
+                                <font color="#c03b2a">Best of Both Worlds</font>
+                                <font face="sans-Serif" color="#c03b2a">!</font>
+                                </h2>
+                            <h3>
+                                Try  our  very  own  Filipino<span>-</span>Mexican 
+                                <br> foods here at <font color="#6e6c2f">KAINAN EN </font> <font color="#c03b2a">LA KANTO</font>
+                            </h3>
+        
+                            <button class="menu_btn" onclick="redirectToMenu()"> <a href="menu.html">VIEW OUR MENU </a></button>
                         </div>
-                    </form>
-
-                    </button>
                 </div>
-                <div class="submit-btn-reservation-holder">
-                    <button type="submit" class="submit-btn-reservation">
-                        <span> BOOK A TABLE </span>
+            </section>
+            <section>
+                <div class="specialties">
+                    <img src="img/divider.png" class="divider_img">
+                    <h1>Fusion on Your Plate, Happiness in Your Heart</h1>
+                    <h2> The Art of Delicious </h2>
+                    <h3> OUR SPECIALTIES </h3>
+                    
                 </div>
-                
-            </div>
-        </div>
+                <div class="food_specialties">
+                    <div class="food_specialties_1">
+                        <img src="img/chicken_adobo.png">
+                        <div class="fs-holder1">
+                            <h2> The Art of Delicious </h2>
+                            <h1> Chicken Adobo </h1>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <button class="food_btn" onclick="redirectToMenu()"><span></span> VIEW OUR MENU </button>
+                        </div>
+                    </div>
+                    <div class="food_specialties_2">
+                        <div class="fs-holder2">
+                            <h2> The Art of Delicious </h2>
+                            <h1> Birria Tacos </h1>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <button class="food_btn" onclick="redirectToMenu()"><span></span> VIEW OUR MENU </button>
+                        </div>
+                        <img src="img/birria_tacos.png">
+                    </div>
+                    <div class="food_specialties_1">
+                        <img src="img/beef_burritos.png">
+                        <div class="fs-holder1">
+                            <h2> The Art of Delicious </h2>
+                            <h1> Beef Burrito </h1>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <button class="food_btn" onclick="redirectToMenu()"> VIEW OUR MENU </button>
+                        </div>
+                    </div>
+            </section>
+            <section>
+                <div class="owl-carousel-holder">
+                    <div class="owl-carousel">
+                        <div class="item"><img src="img/owl-sisig.png" ></div>
+                        <div class="item"><img src="img/owl-enchiladas.png"></div>
+                        <div class="item"><img src="img/owl-bangus.png"></div>
+                        <div class="item"><img src="img/owl-quesedilla.png"></div>
+                        <div class="item"><img src="img/owl-lckawali.png"></div>
+                        <div class="item"><img src="img/owl-taco.png"></div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="reservation-holder">
+                    <div class="reservation-header">
+                         <h2> The Art of Delicious </h2>
+                         <h1> Book A Table</h1>
+                         <div class="reservation-middle">
+                             <p>Escape the ordinary, dive into extraordinary flavors – dine with us <span> ! </span> </p>
+                         </div>
+                         <div class="reservation-form">
+                             <form>
+                                     <select name="group-party-number" id="group-party-number">
+                                         <option value="1">1 Person</option>
+                                         <option value="2">2 People</option>
+                                         <option value="3">3 People</option>
+                                         <option value="4">4 People</option>
+                                         <option value="5">5 People</option>
+                                         <option value="6">6 People</option>
+                                         <option value="7">7 People</option>
+                                         <option value="8">8 People</option>
+                                         <option value="9">9 People</option>
+                                         <option value="10">10 People</option>
+                                       </select>
+                                
+                                 
+                                     <input type="text" name="date" id="date" value="9/11/01">
+                                 
+                                     <select name="Time" id="1">
+                                         <option value="5:30pm">6:30 am</option>
+                                         <option value="5:30pm">7:00 am</option>
+                                         <option value="5:30pm">7:30 am</option>
+                                         <option value="5:30pm">8:00 am</option>
+                                         <option value="5:30pm">8:30 am</option>
+                                         <option value="5:30pm">9:00 am</option>
+                                         <option value="5:30pm">9:30 am</option>
+                                         <option value="5:30pm">10:00 am</option>
+                                         <option value="5:30pm">10:30 am</option>
+                                         <option value="5:30pm">11:00 am</option>
+                                         <option value="5:30pm">11:30 am</option>
+                                         <option value="5:30pm">12:00 pm</option>
+                                         <option value="5:30pm">12:30 pm</option>
+                                         <option value="5:30pm">1:00 pm</option>
+                                         <option value="5:30pm">1:30 pm</option>
+                                         <option value="5:30pm">2:00 pm</option>
+                                         <option value="5:30pm">2:30 pm</option>
+                                         <option value="5:30pm">3:00 pm</option>
+                                         <option value="5:30pm">3:30 pm</option>
+                                         <option value="5:30pm">4:00 pm</option>
+                                         <option value="5:30pm">4:30 pm</option>
+                                         <option value="5:30pm">5:00 pm</option>
+                                         <option value="5:30pm">5:30 pm</option>
+                                         <option value="6:00pm">6:00 pm</option>
+                                         <option value="6:30pm">6:30 pm</option>
+                                         <option value="7:00pm">7:00 pm</option>
+                                         <option value="7:30pm">7:30 pm</option>
+                                         <option value="8:00pm">8:00 pm</option>
+                                         <option value="8:30pm">8:30 pm</option>
+                                         <option value="9:00pm">9:00 pm</option>
+                                         <option value="9:30pm">9:30 pm</option>
+                                         <option value="10:00pm">10:00 pm</option>
+                                         <option value="10:30pm">10:30 pm</option>
+                                         <option value="11:00pm">11:00 pm</option>
+                                         <option value="11:30pm">11:30 pm</option>
+                                     </select>
+                                 </div>
+                             </form>
+         
+                             </button>
+                         </div>
+                         <div class="submit-btn-reservation-holder">
+                             <button type="submit" class="submit-btn-reservation">
+                                 <span> BOOK A TABLE </span>
+                         </div>
+                         
+                     </div>
+                 </div>
+            </section>
+        </main>
         <footer>
             <div class="footer-container">
-                <div class="instagram-page">
-                    <h1> FOLLOW US</h1>
-                    <div class="ig-pics-redirect"> 
-                        <img src="img/beef-lumpia.png" onclick="igPost1()">
-                        <img src="img/beef-chimichichangas.png" onclick="igPost2()">
-                        <img src="img/pork-sinigang.png"onclick="igPost3()"> 
+                <div class="footer-wrapper">
+                    <div class="instagram-page">
+                        <h1> FOLLOW US</h1>
+                        <div class="ig-pics-redirect"> 
+                            <img src="img/beef-lumpia.png" onclick="igPost1()">
+                            <img src="img/beef-chimichichangas.png" onclick="igPost2()">
+                            <img src="img/pork-sinigang.png" onclick="igPost3()">
+                        </div>
+                        <P> For all the latest news and updates, follow us on Instagram: <a href="https://www.instagram.com/kainan_en_la_kanto/?fbclid=IwZXh0bgNhZW0CMTEAAR2ViMAD1sJm4H_ZP6yynwJCnDnlCBEW4k22c2O4pVwo2AarL4-3M7tsGug_aem_0ubQGQwAoowBTMGbfEGCIA"> @kainan_en_la_kanto </a></P>
                     </div>
-                    <P> For all the latest news and updates, follow us on Instagram: <a href="https://www.instagram.com/kainan_en_la_kanto/?fbclid=IwZXh0bgNhZW0CMTEAAR2ViMAD1sJm4H_ZP6yynwJCnDnlCBEW4k22c2O4pVwo2AarL4-3M7tsGug_aem_0ubQGQwAoowBTMGbfEGCIA"> @kainan_en_la_kanto </a></P>
-                </div>
-                
-                    <img src="img/kainan-black-bg.png">
-        
-                <div class="contact">
-                    <h1> CONTACT</h1>
-
-                    <p> Corner Street Side along Hambriento Ave. & Avaro Drive by Sangrado Vaginal, 911420, LAB D, Philippines</p>
-                <div class="icons">
-                    <img src="img/facebook-icon.png" onclick="redirectToFacebook()"> 
-                    <img src="img/discord-icon.png" onclick="redirectToDiscord()">
-                    <img src="img/instagram-icon.png" onclick="redirectToInstagram()">
-                    <img src="img/twitter-icon.png" onclick="redirectToDiscord()">
-                </div>
+                    <div class="logo-holder">
+                        <img src="img/kainan-black-bg.png">
+                    </div>
+                    <div class="contact">
+                        <h1> CONTACT</h1>
+    
+                        <p>Corner Street Side along Hambriento Ave. & Avaro Drive by Sangrado Vaginal, 911420, LAB D, Philippines</p>
+                    <div class="icons">
+                        <img src="img/facebook-icon.png" onclick="redirectToFacebook()"> 
+                        <img src="img/discord-icon.png" onclick="redirectToDiscord()">
+                        <img src="img/instagram-icon.png" onclick="redirectToInstagram()">
+                        <img src="img/twitter-icon.png" onclick="redirectToDiscord()">
+                    </div>
+                    </div>
                 </div>
             </div>
         </footer>
