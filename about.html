@@ -7,7 +7,12 @@
         <link rel="stylesheet" href="css-fonts/header.css">
 
         <link rel="stylesheet" href="css-fonts/about/about-top.css">
+        <link rel="stylesheet" href="css-fonts/about/our-story.css">
+        <link rel="stylesheet" href="css-fonts/about/founders.css">
+        <link rel="stylesheet" href="css-fonts/about/specialties.css">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
+
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
@@ -39,6 +44,64 @@
                         <h1> ABOUT US </h1>
                     </div>
                     
+                </div>
+            </section>
+            <section>
+                <div class="our-story">
+                    <h2>The Art of Delicious</h2>
+                    <h1>OUR STORY</h1>
+                    <div class="os-description">
+                        <p>Klark Oñate, Benz Buhay, and Khirsten Flora met through their shared love of food and culture. Benz, an expert in Mexican cuisine, and Klark, passionate about Filipino dishes, teamed up with Khirsten, a hospitality pro, to create a unique restaurant. By blending bold Mexican flavors with Filipino traditions, they built a space where every meal told a story, celebrating both cultures and offering a memorable dining experience.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="founders">
+                    <div class="founders-holder">
+                        <div class="founders-story">
+                            <h1>MEET THE FOUNDERS</h1>
+                        <p>This restaurant was founded by Klark Oñate, Benz Buhay and Khirsten Flora. Benz, an expert in Mexican cuisine, blends bold flavors with tradition, while Klark brings Filipino dishes to life with modern flair. Khirsten, with his hospitality expertise, ensures a memorable dining experience. Together, they offer a unique fusion of Mexican and Filipino flavors.</p>
+                        </div>
+                        
+                        <img src="img/founders.jpg" alt="FOUNDERS">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="specialties">
+                    <div class="sp-header">
+                        <h2>The Art of Delicious</h2>
+                        <h1>OUR SPECIALTIES</h1>
+                    </div>
+                <div class="pics-tabs-holder">
+                    <div class="specialties-pics">
+                        <img src="img/Taquitos.png" alt="">
+                        <img src="img/chicken_adobo.png" alt="">
+                        <img src="img/coconut-flan.png" alt="">
+                    </div>
+                    <div class="specialties-tab">
+                        <div class="tab-box">
+                            <button class="tab-btn">Appetizer</button>
+                            <button class="tab-btn">Main Course</button>
+                            <button class="tab-btn">Dessert</button>
+                            <button class="tab-btn">Drinks</button>
+                            <div class="line"></div>
+                        </div>
+                        <div class="content-box">
+                            <div class="content active">
+                                <p>From crispy to creamy, sweet to savory, our tempting appetizers are designed to excite and delight. Each dish is a little taste of perfection—ideal for sharing, savoring, and enjoying with good company.</p>
+                            </div>
+                            <div class="content">
+                                <p>Each dish in our Delicious Highlights is a tribute to exceptional taste. From bold flavors to refined presentations, these creations are sure to be the perfect centerpiece of your dining experience</p>
+                            </div>
+                            <div class="content">
+                                <p>Delight in our Sweet Sensations, where each dessert is a carefully crafted experience. Rich, velvety, or fruity, every treat is designed to bring you a taste of bliss and satisfy your sweet cravings.</p>
+                            </div>
+                            <div class="content">
+                                <p>Indulge in the art of perfectly brewed beverages, from the rich, aromatic café de olla of Mexico to the refreshing Buko Juice of the Philippines. Each pour blends bold flavors and cultural traditions, promising a moment of pure pleasure.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -76,8 +139,29 @@
         <script src="js/jquery-3.7.1.min.js"></script>
         <script src="js/header-footer.js"></script>
         <script type="text/javascript">
+            
+            const tabs = document.querySelectorAll('.tab-btn');
+            const contentAll = document.querySelectorAll('.content');
 
+            tabs.forEach((tab, index) =>{
+                tab.addEventListener('click', (e)=>{
+                    tabs.forEach(tab =>{
+                        tab.classList.remove('active')
+                    });
 
+                    tab.classList.add('active'); 
+
+                var line = document.querySelector('.line');
+
+                line.style.width = e.target.offsetWidth + "px";
+                line.style.left = e.target.offsetLeft + "px";
+
+                contentAll.forEach(content =>{
+                        content.classList.remove('active')
+                    });
+                contentAll[index].classList.add('active');
+                })
+            })
         </script>
     </body>
 </html>

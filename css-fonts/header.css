@@ -45,8 +45,9 @@ header.sticky{
     display: inline-block;
     align-items: center;
     padding: 30px;
-    background: #e0e0e0;
+    background: #f0f1ed;
     height: 2.7vh;
+    box-shadow: 0px 17px 10px -15px #111;    
 }
 #last-link{
     margin-right: 8rem;

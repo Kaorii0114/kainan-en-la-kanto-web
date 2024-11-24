@@ -1,25 +1,47 @@
 .frequently-bought{
     margin-top: 20px;
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     flex-direction: column;
     gap: 20px;
     align-items: center;
 }
 .frequently-bought h1{
-    color: #6e6c2f;
+    color: #a44018;
     display: block;
     font-family: PlayFairDisplay;
     font-size: 3.87rem;
     margin-left: 180px;
 }
 .fb-wrapper{
-    width: 92%;
-    height:80%;
-    border: 2px solid blue;
+    width: 80%;
+    height:90%;
     display: flex;
+    gap: 50px;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+}
+.fb-wrapper .items{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.fb-wrapper .items h1{
+    margin: 0;
+    text-align: center;
+    font-weight: 100;
+    width: 290px;
+    font-size: 39px;
+    color: black;
+}
+.fb-wrapper .items p{
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+    margin-top: -10px;
 }
