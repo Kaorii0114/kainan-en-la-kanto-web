@@ -174,6 +174,84 @@
 @media (max-width: 1536px) {
     
   } 
+
+  @media (max-width: 1366px) {
+    .food_specialties{
+        margin-top: 16vh;
+        height: 210vh;
+    }
+    .specialties h1{
+        margin-top: 240px;
+        font-size: 60px;
+    }
+    .specialties h2{
+        bottom: -430px;
+        font-size: 33px;
+    }
+    .specialties h3{
+        bottom: -445px;
+        font-size: 53px;
+    }
+    .food_specialties_1 img{
+        height: 420px;
+        width: auto;
+        margin-right: 40px;
+        margin-left: 20px;
+    }
+    .food_specialties_1 .fs-holder1{
+        margin-top: -80px;
+        flex: 1;
+        height: 50vh;
+    }
+    .food_specialties_1 .fs-holder1 h2{
+        margin-left: 27px;
+        font-size: 22px;
+    }
+    .food_specialties_1 .fs-holder1 h1{
+        padding-top: 10px;
+        font-size: 44px;
+    }
+    .food_specialties_1 .fs-holder1 p{
+        width: 97%;
+        font-size: 22px;
+        margin-top: 25px;
+    }
+    .food_btn{
+        padding: 18px;
+        margin-top: 35px;
+        font-size: 18px;
+    }
+    .food_specialties_2{    
+        margin: 90px auto;
+    }
+    .food_specialties_2 img{
+        height: 420px;
+        width: auto;
+        margin-right: 20px;
+        margin-left: 40px;
+    }
+    .food_specialties_2 .fs-holder2{
+        margin-top: -80px;
+        flex: 1;
+        height: 50vh; 
+    }
+    .food_specialties_2 .fs-holder2 h2{
+        font-size: 22px;
+        margin-right: 17px;
+    }
+    .food_specialties_2 .fs-holder2 h1{
+        padding-top: 10px;
+        font-size: 44px;
+    }
+    .food_specialties_2 .fs-holder2 p{
+        width: 97%;
+        font-size: 22px;
+        margin-top: 25px;
+    }
+    .owl-carousel-holder{
+        margin-top: 100px;
+    }
+  }
   
   /* xl */
   @media (max-width: 1280px) {

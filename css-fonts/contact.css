@@ -106,8 +106,6 @@ section{
 .contact-map-holder iframe{
     width: 100%;
 }
-
-
   /* 2xl */
 @media (max-width: 1536px) {
     html, body {
@@ -131,6 +129,44 @@ section{
     }
     .contact-info-map-holder{
         width: 1280px;
+    }
+  }
+  @media (max-width: 1366px) {
+    body{
+        background-attachment: fixed;
+        height: 100%;
+    }
+    .contact-bg{
+        width: 100%;
+    }
+    .contact-header{
+        margin-top: 125px;
+    }
+    .contact-title h1{
+        font-size: 8.5rem;
+    }
+    .contact-us-big{
+        width: 1180px;
+    }
+    .contact-us-big-wrapper h1{
+        font-size: 6.2rem;
+    }
+    .contact-info-map-holder{
+        width: 1180px;
+        padding-bottom: 20px;
+    }
+    .contact-description p{
+        font-size: 1.4rem;
+    }
+    .contact-type{
+        font-size: 1.4rem;
+    }
+    .contacts{
+        margin-left: 100px;}
+    .contacts h4{
+        font-size: 1.3rem;
+        padding-top: 45px;
+        color: gray;
     }
   }
 

@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+footer{
+    height: 46vh;
+}
 .footer-container{
     display: flex;
     justify-content: center;
@@ -12,7 +14,6 @@
 }
 .footer-wrapper{
     width: 1563px;
-    
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -166,7 +167,65 @@
        
     }
   }
-  
+  @media (max-width: 1366px) {
+    footer{
+        background-color: #333333;
+    }
+    .footer-container{
+        max-width: 1563px;
+        height: 44vh;
+    }
+    .footer-wrapper{
+        width: 1280px;
+        gap: 20px;
+    }
+    .footer-container img{
+        height: 200px;
+        width: auto;
+        padding: 0;
+    }
+    .footer-container .instagram-page{
+        background: #333333;
+        height: auto;
+        width: 430px;
+        margin-top: 19px;
+    }
+    .footer-container .contact{
+        background: #333333;
+        height: 200px;
+        width: 430px;
+        margin-top: -28px;
+    }
+    .footer-container .instagram-page h1{
+        font-size: 21px;
+    }
+    .footer-container .instagram-page .ig-pics-redirect img{
+        width: 100px;
+        height: auto;
+        margin: 8px;
+    }
+    .footer-container .instagram-page p , a{
+        margin-top: 5px;
+        font-size: 17px;
+    }
+    .footer-container .contact h1{
+        font-size: 21px;
+    }
+    .footer-container .contact p{
+        margin-top: 15px;
+        width: 400px;
+        font-size: 18.9px;
+    }
+    .footer-container .contact .icons{
+        margin-top: 20px;
+    }
+    .footer-container .contact .icons img{
+        width: 27px;
+        height: auto;
+        margin: 15px;
+       
+    }
+  }
   /* xl */
   @media (max-width: 1280px) {
     .footer-container{
