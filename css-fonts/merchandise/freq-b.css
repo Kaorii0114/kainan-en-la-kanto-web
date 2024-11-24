@@ -1,0 +1,25 @@
+.frequently-bought{
+    margin-top: 20px;
+    width: 100%;
+    height: 60vh;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.frequently-bought h1{
+    color: #6e6c2f;
+    display: block;
+    font-family: PlayFairDisplay;
+    font-size: 3.87rem;
+    margin-left: 180px;
+}
+.fb-wrapper{
+    width: 92%;
+    height:80%;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}

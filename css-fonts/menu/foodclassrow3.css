@@ -1,0 +1,92 @@
+.foodclass .foodclass-menu-holder-row3{
+    width: 100%;
+    height: 50vh;
+    background-color: #f0f1ed;
+    display: flex;
+    justify-content: center;
+}
+.foodclass-menu-holder-row3 .menu-tab-specialties{
+    margin-top: 30px;
+    height: 45vh;
+    width: 72.5%;
+    display: flex;
+    font-family: TheSeasons;
+    
+}
+.foodclass-menu-holder-row3 .menu-tab-specialties .tab-description-holder{
+    width: 72.5%;
+    height: 45vh;
+}
+.foodclass-menu-holder-row3 .menu-tab-specialties li{
+    list-style: none;
+}
+.tab-dishes-holder-starter {
+    position: relative; 
+}
+.tab-dishes-holder-starter .tab-dishes-starter {
+    position: relative; 
+}
+.tab-dishes-holder-starter ul{
+    padding: 0 0;
+	border-right: 3px solid #ccc;  
+}  
+.tab-dishes-holder-starter .tab-dishes-starter li{
+    display: flex;
+	align-items: center;
+	grid-gap: .5rem;
+	padding: 15px 2rem;
+	cursor: pointer;
+	font-size: 25px;
+    font-weight: bold;
+	border-right: 3px solid transparent;
+    position: relative;
+    transition: border-right-color .5s ease, transform 0.1s ease;
+}
+.tab-description-holder{
+    overflow: hidden
+}
+
+/* 2xl */
+/* @media (max-width: 1536px) {
+    
+  }
+   */
+
+   @media (max-width: 1366px) {
+    .foodclass .foodclass-menu-holder-row3{
+        height: 60vh;
+    }
+    .foodclass-menu-holder-row3 .menu-tab-specialties{
+        height: 50vh;
+        width: 78.5%;
+    }
+    .foodclass-menu-holder-row3 .menu-tab-specialties .tab-description-holder{
+        width: 78.5%;
+        height: 50vh;
+    }
+   }
+
+  /* xl */
+  /* @media (max-width: 1280px) {
+    
+  } */
+  
+  /* lg */
+  /* @media (max-width: 1024px) {
+    
+  } */
+  
+  /* md */
+  /* @media (max-width: 768px) {
+    
+  } */
+  
+  /* sm */
+  /* @media (max-width: 640px) {
+    
+  } */
+  
+  /* xs */
+  /* @media (max-width: 475px) {
+    
+  } */

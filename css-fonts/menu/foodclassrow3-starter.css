@@ -1,0 +1,158 @@
+.foodclass-menu-holder-row3 .menu-tab-specialties .tab-dishes-holder-starter{
+    width: 25.5%;
+    height: 45vh;
+}
+.tab-dishes-holder-starter .tab-dishes-starter {
+    position: relative; 
+}
+.tab-dishes-holder-starter .tab-dishes-starter li{
+    display: flex;
+	align-items: center;
+	grid-gap: .5rem;
+	padding: 15px 2rem;
+	cursor: pointer;
+	font-size: 25px;
+    font-weight: bold;
+	border-right: 3px solid transparent;
+    position: relative;
+    transition: border-right-color .5s ease, transform 0.1s ease;
+}
+.tab-indicator1{
+    position: absolute;
+    width: 3.5px;
+    height: 60px;
+    background: black;
+    left: 347.5px;
+    top: -5px;
+    transition: all 500ms ease-in-out;
+}
+.tab-dishes-holder-starter .tab-dishes-starter li:hover {
+    transform: translateY(-3px);
+}
+.tab-description-holder .tab-description-starter{
+    padding: 20px 25px;
+}
+.tab-description-holder{
+    overflow: hidden
+}
+.tab-description-holder .tab-description-starter li{
+    max-height: 0;
+    visibility: hidden; 
+    opacity: 0; 
+    transform: translateX(-20px); 
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.tab-description-holder .tab-description-starter li.active{
+    max-height: 500px;
+    visibility: visible;
+    opacity: 1; 
+    transform: translateX(0);
+}
+.tab-description-holder .tab-description-starter .tab-description-inner{
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+}
+.tab-description-holder .tab-description-starter li .description-text{
+    width: 70%;
+    text-align: left;
+}
+.tab-description-holder .tab-description-starter li h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.tab-description-holder .tab-description-starter li h5{
+    font-size: 27px;
+    font-weight: 600;
+    color: #333333;
+    letter-spacing: 1.4px;
+    margin-bottom: 20px;
+}
+.tab-description-holder .tab-description-starter li p{
+    font-size: 21px;
+    font-family: PlayFairDisplay;
+    margin-bottom: 35px;
+}
+.tab-description-holder .tab-description-starter li span{
+    font-size: 30px;
+    font-weight: 600;
+}
+.tab-description-holder .tab-description-starter li img{
+    margin-top: -20px;
+    margin-left: 20px;
+    height: 38vh;
+    width: auto;
+    border-radius: 35px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .8);
+}
+
+/* 2xl */
+/* @media (max-width: 1536px) {
+    
+  }
+   */
+
+   @media (max-width: 1366px) {
+    .foodclass-menu-holder-row3 .menu-tab-specialties .tab-dishes-holder-starter{
+        width: 27%;
+        height: 46vh;
+    }
+    .tab-dishes-holder-starter .tab-dishes-starter li{
+        padding: 12.4px 2rem;
+        font-size: 21px;
+    }
+    .tab-indicator1{
+        width: 3px;
+        height: 49px;
+        left: 283px;
+    }
+    .tab-description-holder .tab-description-starter{
+        padding: 18px 22px;
+    }
+    .tab-description-holder .tab-description-starter li h1{
+        font-size: 38px;
+        margin-bottom: 18px;
+    }
+    .tab-description-holder .tab-description-starter li h5{
+        font-size: 20px;
+        margin-bottom: 17px;
+    }
+    .tab-description-holder .tab-description-starter li p{
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+    .tab-description-holder .tab-description-starter li span{
+        font-size: 26px;
+    }
+    .tab-description-holder .tab-description-starter li img{
+        margin-top: -18px;
+        margin-left: 20px;
+        height: 45vh;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, .7);
+    }
+   }
+
+  /* xl */
+  /* @media (max-width: 1280px) {
+    
+  } */
+  
+  /* lg */
+  /* @media (max-width: 1024px) {
+    
+  } */
+  
+  /* md */
+  /* @media (max-width: 768px) {
+    
+  } */
+  
+  /* sm */
+  /* @media (max-width: 640px) {
+    
+  } */
+  
+  /* xs */
+  /* @media (max-width: 475px) {
+    
+  } */

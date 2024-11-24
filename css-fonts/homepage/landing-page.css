@@ -36,7 +36,7 @@
 }
 .Landing_page h1{
     z-index: 2;
-    font-size: 71px;
+    font-size: 69px;
     font-family: TheSeasons;
 }
 .Landing_page h2{
@@ -88,12 +88,13 @@
 .menu_btn:active{
     transform: scale(0.9);
 }
-#hr2{
+#hr2, #hrfor1366{
     display: none;
 }
 
   /* 2xl */
  @media (max-width: 1536px) {
+    
 
     html, body {
         max-width: 100%;
@@ -134,15 +135,13 @@
     .Landing_page hr{
         width: 100px;
     }
-    #hr2{
+    #hr1, #hr2{
         display: none;
     }
-    #hr3{
+    #hrfor1366{
         display: block;
     }
-    #hr1{
-        display: none;
-    }
+    
     .Landing_page h2{
         font-size: 30px;
         margin-top: 5px;

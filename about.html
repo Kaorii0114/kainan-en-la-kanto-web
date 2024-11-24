@@ -1,56 +1,83 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title> KAINAN EN LA KANTO </title>
-        <link rel="stylesheet" href="css-fonts/menu.css">
+        <link rel="stylesheet" href="css-fonts/style.css">
+        <link rel="stylesheet" href="css-fonts/footer.css">
+        <link rel="stylesheet" href="css-fonts/header.css">
+
+        <link rel="stylesheet" href="css-fonts/about/about-top.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
         <link rel="icon" href="img/KAINAN_LOGO.png" type="image/icon type">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=0">
     </head>
     <body>
         <header>
-                <img src="img/KAINAN_LOGO_NOBG.png">
-                <a href="index.html">HOME</a>
-                <a href="menu.html">OUR MENU</a>
-                <a href="merchandise.html">OUR MERCHANDISE</a>
-                <a href="about.html">ABOUT US</a>
-                <a href="contact.html">CONTACT US</a>
+            <h3 class="header-cp">KAINAN EN LA KANTO</h3>
+            <img src="img/KAINAN_LOGO_NOBG.png" alt="LOGO" class="header-logo">
+                <a href="index.html" class="header-link">HOME</a>
+                <a href="menu.html" class="header-link">OUR MENU</a>
+                <a href="merchandise.html" class="header-link">OUR MERCHANDISE</a>
+                <a href="about.html" class="header-link">ABOUT US</a>
+                <a href="contact.html" class="header-link" id="last-link">CONTACT US</a>
+                
+                <button class="header-bars">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                      </svg>
+                                           
+                </button>
         </header>
-        <div class="menu-header">
-            <div class="menu-title">
-                <h1> OUR MENU </h1>
-            </div>
-            <div class="menu-subtitle">
-                <h2>A fusion of flavors from the Philippines to Mexico—get ready to taste the best of both worlds</h2>
-            </div>
-            </div>
-            <img src="img/menu-bg.png" class="menu-bg">
-        </div>
-
+        <main>
+            <section>
+                <img src="img/about-bg.png" class="about-bg">
+                <div class="about-header">
+                    <div class="about-title">
+                        <h1> ABOUT US </h1>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
         <footer>
             <div class="footer-container">
-                <div class="instagram-page">
-                    <h1> FOLLOW US</h1>
-                    <div class="ig-pics-redirect"> 
-                        <img src="img/beef-lumpia.png" onclick="igPost1()">
-                        <img src="img/beef-chimichichangas.png" onclick="igPost2()">
-                        <img src="img/pork-sinigang.png" onclick="igPost3()">
+                <div class="footer-wrapper">
+                    <div class="instagram-page">
+                        <h1> FOLLOW US</h1>
+                        <div class="ig-pics-redirect"> 
+                            <img src="img/beef-lumpia.png" onclick="igPost1()">
+                            <img src="img/beef-chimichichangas.png" onclick="igPost2()">
+                            <img src="img/pork-sinigang.png" onclick="igPost3()">
+                        </div>
+                        <P> For all the latest news and updates, follow us on Instagram: <a href="https://www.instagram.com/kainan_en_la_kanto/?fbclid=IwZXh0bgNhZW0CMTEAAR2ViMAD1sJm4H_ZP6yynwJCnDnlCBEW4k22c2O4pVwo2AarL4-3M7tsGug_aem_0ubQGQwAoowBTMGbfEGCIA"> @kainan_en_la_kanto </a></P>
                     </div>
-                    <P> For all the latest news and updates, follow us on Instagram: <a href="https://www.instagram.com/kainan_en_la_kanto/?fbclid=IwZXh0bgNhZW0CMTEAAR2ViMAD1sJm4H_ZP6yynwJCnDnlCBEW4k22c2O4pVwo2AarL4-3M7tsGug_aem_0ubQGQwAoowBTMGbfEGCIA"> @kainan_en_la_kanto </a></P>
-                </div>
-                
-                    <img src="img/kainan-black-bg.png">
-        
-                <div class="contact">
-                    <h1> CONTACT</h1>
-
-                    <p> Corner Street Side along Hambriento Ave. & Avaro Drive by Sangrado Vaginal, 911420, LAB D, Philippines</p>
-                <div class="icons">
-                    <img src="img/facebook-icon.png" onclick="redirectToFacebook()"> 
-                    <img src="img/discord-icon.png" onclick="redirectToDiscord()">
-                    <img src="img/instagram-icon.png" onclick="redirectToInstagram()">
-                    <img src="img/twitter-icon.png" onclick="redirectToDiscord()">
-                </div>
+                    <div class="logo-holder">
+                        <img src="img/kainan-black-bg.png">
+                    </div>
+                    <div class="contact">
+                        <h1> CONTACT</h1>
+    
+                        <p>Corner Street Side along Hambriento Ave. & Avaro Drive by Sangrado Vaginal, 911420, LAB D, Philippines</p>
+                    <div class="icons">
+                        <img src="img/facebook-icon.png" onclick="redirectToFacebook()"> 
+                        <img src="img/discord-icon.png" onclick="redirectToDiscord()">
+                        <img src="img/instagram-icon.png" onclick="redirectToInstagram()">
+                        <img src="img/twitter-icon.png" onclick="redirectToDiscord()">
+                    </div>
+                    </div>
                 </div>
             </div>
         </footer>
+
+        
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/header-footer.js"></script>
+        <script type="text/javascript">
+
+
+        </script>
     </body>
 </html>
