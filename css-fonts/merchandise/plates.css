@@ -1,0 +1,24 @@
+.plates-holder{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.plates h1{
+    font-family: PlayFairDisplay;
+    font-size: 8rem;
+    color: #6e6c2f;
+}
+.owl-carousel-holder{
+    height: 50vh;
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f0f1ed;
+}
+.item{
+    width: 250px;
+    height: auto;
+}

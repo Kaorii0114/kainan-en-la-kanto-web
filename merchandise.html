@@ -10,6 +10,10 @@
         <link rel="stylesheet" href="css-fonts/merchandise/collections.css">
         <link rel="stylesheet" href="css-fonts/merchandise/freq-b.css">
         <link rel="stylesheet" href="css-fonts/merchandise/new-release.css">
+        <link rel="stylesheet" href="css-fonts/merchandise/plates.css">
+        
+        <link rel="stylesheet" href="css-fonts/homepage/owl-carousel-min.css">
+        <link rel="stylesheet" href="css-fonts/homepage/owl-default-theme-min.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +23,9 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=0">
     </head>
     <body>
+        <div id="pre-loader"></div>
         <header>
+            
             <h3 class="header-cp">KAINAN EN LA KANTO</h3>
             <img src="img/KAINAN_LOGO_NOBG.png" alt="LOGO" class="header-logo">
                 <a href="index.html" class="header-link">HOME</a>
@@ -42,8 +48,9 @@
                     <div class="merch-title">
                         <h1> OUR MERCHANDISE </h1>
                     </div>
-              </section>
-              <section>
+                </div>
+            </section>
+            <section>
                 <div class="scrolldown-holder">
                     <div class="arrow-down">
                         <div class="left"></div>
@@ -58,35 +65,37 @@
                         <div class="item-wrapper">
                             <div class="items">
                                 <img src="merchandise-img/plates/WP1.png" alt="White Plate">
-                                <h2><a href="merch-plates.html">Plates </a> </h2>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="chevron">
+                                <button id="plates-redirect">Plates
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="chevron" >
                                     <path fill-rule="evenodd" d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
                                     <path fill-rule="evenodd" d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
                                   </svg>
+                                </button>
                             </div>
                             <div class="items">
                                 <img src="merchandise-img/bags/WB1.png" alt="White Plate">
-                                <h2><a href="merch-bags.html">Bags</a></h2>
+                                <button id="bags-redirect">Bags
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="chevron">
                                     <path fill-rule="evenodd" d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
                                     <path fill-rule="evenodd" d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
                                   </svg>
+                                </button>
                             </div>
                             <div class="items">
                                 <img src="merchandise-img/mugs/WM1.png" alt="White Plate">
-                                <h2> <a href="merch-mugs.html">Mugs</a> </h2>
+                                <button id="mugs-redirect">Mugs
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="chevron">
                                     <path fill-rule="evenodd" d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
                                     <path fill-rule="evenodd" d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
                                   </svg>
-                                  
+                                </button>
                             </div>
                             
                         </div>
                     </div>
                 </div>
-              </section>
-              <section>
+            </section>
+            <section>
                 <div class="frequently-bought">
                     <h1>Frequently Bought</h1>
                     <div class="fb-wrapper">
@@ -119,8 +128,8 @@
                         </div>
                     </div>
                 </div>
-              </section>
-              <section>
+            </section>
+            <section>
                 <div class="new-release">
                     <h1>New Releases</h1>
                     <div class="new-release-wrapper">
@@ -141,15 +150,67 @@
                             <img src="merchandise-img/plates/BP1.png" alt="White Plate">
                             <h1>HaloBrero Plate (Black) </h1>
                             <p>₱110.00</p>
-                        </div>
-
-                            
-                        
-                              
+                        </div>  
                         </div>
                     </div>
                 </div>
+            </section>
+
+                <section id="plates">
+                    <div class="plates-holder">
+                        <div class="plates">
+                            <h1>PLATES</h1>
+                        </div>
+                        <div class="owl-carousel-holder">
+                            <div class="owl-carousel">
+                                <div class="item"><img src="merchandise-img/plates-card/1.png" ></div>
+                                <div class="item"><img src="merchandise-img/plates-card/2.png"></div>
+                                <div class="item"><img src="merchandise-img/plates-card/3.png"></div>
+                                <div class="item"><img src="merchandise-img/plates-card/4.png"></div>
+                                <div class="item"><img src="merchandise-img/plates-card/5.png"></div>
+                                <div class="item"><img src="merchandise-img/plates-card/6.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
               </section>
+              <section id="bags">
+                <div class="plates-holder">
+                    <div class="plates">
+                        <h1> BAGS</h1>
+                    </div>
+                    <div class="owl-carousel-holder">
+                        <div class="owl-carousel">
+                            <div class="item"><img src="merchandise-img/bags-card/1.png" ></div>
+                            <div class="item"><img src="merchandise-img/bags-card/2.png"></div>
+                            <div class="item"><img src="merchandise-img/bags-card/3.png"></div>
+                            <div class="item"><img src="merchandise-img/bags-card/4.png"></div>
+                            <div class="item"><img src="merchandise-img/bags-card/5.png"></div>
+                            <div class="item"><img src="merchandise-img/bags-card/6.png"></div>
+                        </div>
+                    </div>
+                </div>
+                
+          </section>
+          <section id="mugs">
+            <div class="plates-holder">
+                <div class="plates">
+                    <h1>MUGS</h1>
+                </div>
+                <div class="owl-carousel-holder">
+                    <div class="owl-carousel">
+                        <div class="item"><img src="merchandise-img/mugs-card/1.png" ></div>
+                        <div class="item"><img src="merchandise-img/mugs-card/2.png"></div>
+                        <div class="item"><img src="merchandise-img/mugs-card/3.png"></div>
+                        <div class="item"><img src="merchandise-img/mugs-card/4.png"></div>
+                        <div class="item"><img src="merchandise-img/mugs-card/5.png"></div>
+                        <div class="item"><img src="merchandise-img/mugs-card/6.png"></div>
+                    </div>
+                </div>
+            </div>
+            
+      </section>
+              
         </main>
         <footer>
             <div class="footer-container">
@@ -182,8 +243,52 @@
         </footer>
         <script src="js/jquery-3.7.1.min.js"></script>
         <script src="js/header-footer.js"></script>
+        <script src="js/loader.js"></script>
+        <script src="js/owl.carousel.js"></script>
         <script type="text/javascript">
 
+$(document).ready(function () {
+   
+    function scrollToSection(sectionId) {
+        
+        var viewportHeight = $(window).height();
+        
+        
+        var targetOffset = $(sectionId).offset().top;
+        
+        
+        var scrollPosition = targetOffset - (viewportHeight / 2) + ($(sectionId).outerHeight() / 2);
+        
+        // Animate the scroll
+        $("html, body").animate({ scrollTop: scrollPosition }, 100);
+    }
+
+    $("#plates-redirect").click(function () {
+        scrollToSection("#plates");
+    });
+
+    $("#bags-redirect").click(function () {
+        scrollToSection("#bags");
+    });
+
+    $("#mugs-redirect").click(function () {
+        scrollToSection("#mugs");
+    });
+
+        });
+            
+            $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 6, 
+            loop: true, 
+            margin: 25, 
+            autoplay: true, 
+            autoplayTimeout: 3500, 
+            autoplayHoverPause: true, 
+            mouseDrag: true
+           
+        });
+    });
 
         </script>
     </body>

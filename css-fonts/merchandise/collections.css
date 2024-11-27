@@ -33,23 +33,29 @@
     height: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.items h2{
+.items button{
+    border: none;
+    z-index: 100;
+    font-weight: bold;
     text-align: left;
     margin-top: 28px; 
     color: #a44018;
     cursor: pointer;
     width: 190px;
 }
-.collections .items a{
+.collections .items button{
     font-size: 45px;
     font-family: PlayFairDisplay;
     text-decoration: none;
     color: #6e6c2f;
+    z-index: 100;
 }
 .chevron{
     position: absolute;
     width: 43px;
-    margin-top: -45px;
+    margin-top: 13px;
+    margin-left: 20px;
     color: #6e6c2f;
     cursor: pointer;
+    z-index: 0;
 }

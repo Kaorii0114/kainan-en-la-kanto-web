@@ -31,6 +31,23 @@
     margin: 0;
     padding: 0;
 }
+#pre-loader {
+  background: #f0f1ed url('/img/kainan-loader.gif') no-repeat center center;
+  background-size: 30%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0);
+  transition: transform 1.1s cubic-bezier(0.4, 0, 0.2, 1), opacity 1.1s ease; /* Adjust the transition duration and curve */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  z-index: 100000;
+  }
 body{
   background: #f0f1ed;
 }
