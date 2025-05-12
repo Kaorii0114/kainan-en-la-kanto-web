@@ -36,7 +36,7 @@ header .header-logo{
     font-family: TheSeasons;
     font-weight: 600;
     position: relative;
-    margin: 0 50px;
+    margin: 0 20px;
     transition: 0.5s;
 }
 header.sticky{ 
@@ -48,9 +48,6 @@ header.sticky{
     background: #f0f1ed;
     height: 2.7vh;
     box-shadow: 0px 17px 10px -15px #111;    
-}
-#last-link{
-    margin-right: 8rem;
 }
 header.sticky .header-logo{
     top: -42px;
