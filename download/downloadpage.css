@@ -1,0 +1,158 @@
+.header_conntainer{
+    margin-top: 120px;
+    height: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header_conntainer .header{
+    width: 1300px;
+    font-size: 2.8rem;
+    justify-content: center;
+    text-align: center;
+    font-family: PlayFairDisplay;
+    margin-right:   auto;
+    margin-left: auto;
+    color: #a44018;
+    line-height: 5rem;
+    letter-spacing: 3px;
+}
+.header_conntainer .subtitle{
+    width: 1000px;
+    justify-content: center;
+    text-align: center;
+    font-family: PlayFairDisplay;
+    margin-right:   auto;
+    margin-left: auto;
+    color: #6e6c2f;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+.header_conntainer .img_pic{
+    margin-left: auto;
+    margin-right: auto;
+}
+.header_conntainer .img_pic img{
+        height: 450px;
+        width: auto;
+}
+.header_conntainer .download-btn{
+    margin-left: auto;
+    margin-right: auto;
+}
+.header_conntainer .download-btn button{
+    background-color: #a44018;
+    border: #a44018;
+    padding: 25px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 200px;
+}
+.header_conntainer .download-btn button a{
+    font-family: TheSeasons;
+    text-decoration: none;
+
+}
+
+.league-spartan {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+header{
+    width: 100%;
+    position: fixed ; 
+    left: 0;
+    top: 0;
+    display: block;
+    justify-content: space-around;
+    text-align: right;
+    padding-top: 3.6rem;
+    align-items: center;
+    font-family: TheSeasons;
+    transition: 0.6s;
+    transition: ease-in;
+    z-index: 1000;
+}
+header .header-logo{
+    height: 170px;
+    width: auto;
+    top: 20px;
+    left: 40px;
+    position: absolute;
+    transition: 0.5s;
+}
+.header-link{
+    text-decoration: none;
+    color: #a44018;
+    font-size: 23px;
+    font-weight: 525s;
+    letter-spacing: 1.5px;
+    font-family: TheSeasons;
+    font-weight: 600;
+    position: relative;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+header.sticky{ 
+    justify-content: space-evenly;
+    text-align: right;
+    display: inline-block;
+    align-items: center;
+    padding: 30px;
+    background: #f0f1ed;
+    height: 2.7vh;
+    box-shadow: 0px 17px 10px -15px #111;    
+}
+header.sticky .header-logo{
+    top: -42px;
+    transform: scale(0.5);
+}
+header.sticky .header-link {
+    font-size: 21px;
+    color: #a44018;
+    font-weight: 500;
+}
+.header-link::before{
+    padding: 0;
+    position: absolute;
+    content: "";
+    bottom: -0.3rem;
+    width: 100%;
+    height: 4px;
+    background: #a44018;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+.header-link:hover::before{
+    transform: scaleX(1);
+}
+.sticky .header-link::before{
+    background: #a44018;
+}
+.header-bars{
+    background-color: transparent;
+    color: #f0f1ed;
+    border: none;
+    width: 5rem;
+    height: 5rem;
+    display: none;
+    justify-self: flex-end;
+    padding-right: 1.5rem;
+    transition: 0.5s;
+}
+.header-cp{
+    display: none;
+    font-size: medium;
+    color: #a44018;
+    font-family: "League Spartan", sans-serif;
+    transition: 0.5s;
+    transition: ease-in;
+}
+
+ 
